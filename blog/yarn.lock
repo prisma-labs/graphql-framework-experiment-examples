@@ -2198,6 +2198,7 @@ pumpkins@../../pumpkins:
     graphql "^14.5.8"
     nexus "^0.12.0-rc.4"
     nexus-prisma "^0.5.0"
+    prisma2 "^2.0.0-preview016.2"
     simple-git "^1.126.0"
     ts-node "^8.5.0"
     ts-node-dev "^1.0.0-pre.44"
