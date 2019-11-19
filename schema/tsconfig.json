@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    "outDir": "dist",
     "rootDir": "app",
     "strict": true,
     "skipLibCheck": true

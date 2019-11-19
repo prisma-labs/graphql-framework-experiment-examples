@@ -53,10 +53,6 @@
   version "1.13.3"
   resolved "https://registry.yarnpkg.com/@oclif/config/-/config-1.13.3.tgz#1b13e18d0e4242ddbd9cbd100f0eec819aa2bf8c"
   integrity sha512-qs5XvGRw+1M41abOKCjd0uoeHCgsMxa2MurD2g2K8CtQlzlMXl0rW5idVeimIg5208LLuxkfzQo8TKAhhRCWLg==
-  dependencies:
-    "@oclif/parser" "^3.8.0"
-    debug "^4.1.1"
-    tslib "^1.9.3"
 
 "@oclif/errors@^1.2.2":
   version "1.2.2"
@@ -3107,7 +3103,7 @@ pump@^3.0.0:
     once "^1.3.1"
 
 pumpkins@../../pumpkins:
-  version "0.0.0-sha.a61399b"
+  version "0.0.0-sha.cb76e46"
   dependencies:
     "@oclif/command" "^1"
     "@oclif/config" "^1"

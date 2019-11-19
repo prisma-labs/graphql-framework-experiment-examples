@@ -21,6 +21,6 @@
     "postinstall": "yarn -s link pumpkins && chmod +x node_modules/.bin/pumpkins"
   },
   "pumpkins": {
-    "singleton": false
+    "appMode": "explicit"
   }
 }
