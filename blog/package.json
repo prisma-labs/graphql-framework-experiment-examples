@@ -2,7 +2,7 @@
   "name": "example",
   "private": true,
   "version": "0.0.0",
-  "main": "dist/app.js",
+  "main": "dist/__start.js",
   "scripts": {
     "clean": "rm -rf dist",
     "style": "prettier --write 'src/**/*'",

@@ -1,7 +1,6 @@
 {
   "name": "hello-pumpkins",
   "version": "1.0.0",
-  "main": "dist/app.js",
   "license": "MIT",
   "dependencies": {
     "pumpkins": "../../pumpkins"
@@ -13,11 +12,14 @@
   },
   "scripts": {
     "clean": "rm -rf dist",
-    "start": "node dist/app.js",
+    "start": "node dist/__start.js",
     "build": "pumpkins build",
     "generate": "pumpkins generate",
     "dev": "pumpkins dev",
     "doctor": "pumpkins doctor",
     "postinstall": "yarn -s link pumpkins && chmod +x node_modules/.bin/pumpkins"
+  },
+  "prettier": {
+    "semi": false
   }
 }
