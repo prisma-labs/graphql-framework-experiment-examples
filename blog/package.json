@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
-    "start": "node dist/__start",
+    "start": "node dist/start",
     "clean": "rm -rf dist",
     "style": "prettier --write 'src/**/*'",
     "build": "yarn -s clean && pumpkins build",

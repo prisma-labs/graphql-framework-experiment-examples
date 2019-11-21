@@ -12,7 +12,7 @@
   },
   "scripts": {
     "clean": "rm -rf dist",
-    "start": "node dist/__start",
+    "start": "node dist/start",
     "build": "pumpkins build",
     "generate": "pumpkins generate",
     "dev": "pumpkins dev",
