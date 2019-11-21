@@ -2,8 +2,8 @@
   "name": "example",
   "private": true,
   "version": "0.0.0",
-  "main": "dist/__start.js",
   "scripts": {
+    "start": "node dist/__start",
     "clean": "rm -rf dist",
     "style": "prettier --write 'src/**/*'",
     "build": "yarn -s clean && pumpkins build",
