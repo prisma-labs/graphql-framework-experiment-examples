@@ -1,15 +1,11 @@
 {
-  "name": "hello-pumpkins",
+  "name": "sans-prisma",
   "version": "1.0.0",
   "license": "MIT",
   "dependencies": {
     "pumpkins": "../../pumpkins"
   },
-  "devDependencies": {
-    "@types/node": "^12.12.6",
-    "prisma2": "^2.0.0-preview016.2",
-    "typescript": "^3.7.2"
-  },
+  "devDependencies": {},
   "scripts": {
     "clean": "rm -rf dist",
     "start": "node dist/start",
@@ -17,6 +13,6 @@
     "generate": "pumpkins generate",
     "dev": "pumpkins dev",
     "doctor": "pumpkins doctor",
-    "postinstall": "yarn -s link pumpkins"
+    "postinstall": "yarn -s link pumpkins && chmod +x node_modules/.bin/pumpkins"
   }
 }
