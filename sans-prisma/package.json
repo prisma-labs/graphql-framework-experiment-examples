@@ -12,7 +12,6 @@
     "build": "pumpkins build",
     "generate": "pumpkins generate",
     "dev": "pumpkins dev",
-    "doctor": "pumpkins doctor",
-    "postinstall": "yarn -s link pumpkins && chmod +x node_modules/.bin/pumpkins"
+    "doctor": "pumpkins doctor"
   }
 }

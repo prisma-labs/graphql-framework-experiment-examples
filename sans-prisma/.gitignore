@@ -51,6 +51,6 @@ typings/
 yarn-debug.log*
 yarn-error.log*
 
-dist
+build
 .pumpkins
 .vscode
