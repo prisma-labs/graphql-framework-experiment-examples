@@ -8,10 +8,11 @@
   "devDependencies": {},
   "scripts": {
     "clean": "rm -rf dist",
-    "start": "node dist/start",
+    "start": "node build/start",
     "build": "pumpkins build",
     "generate": "pumpkins generate",
     "dev": "pumpkins dev",
-    "doctor": "pumpkins doctor"
+    "doctor": "pumpkins doctor",
+    "postinstall": "yarn -s link pumpkins && chmod +x node_modules/.bin/pumpkins"
   }
 }
