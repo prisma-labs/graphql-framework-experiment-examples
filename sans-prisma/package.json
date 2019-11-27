@@ -8,7 +8,7 @@
   "devDependencies": {},
   "scripts": {
     "clean": "rm -rf dist",
-    "start": "node build/start",
+    "start": "node node_modules/.build/start",
     "build": "pumpkins build",
     "generate": "pumpkins generate",
     "dev": "pumpkins dev",
