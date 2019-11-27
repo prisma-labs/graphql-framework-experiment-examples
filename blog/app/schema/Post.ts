@@ -1,4 +1,6 @@
-objectType({
+import { app } from 'pumpkins'
+
+app.objectType({
   name: 'CustomPost',
   definition(t) {
     t.model('Post').id()

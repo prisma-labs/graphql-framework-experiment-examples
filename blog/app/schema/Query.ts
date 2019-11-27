@@ -1,4 +1,6 @@
-queryType({
+import { app } from 'pumpkins'
+
+app.queryType({
   definition(t) {
     t.crud.blogs({
       pagination: false,
@@ -13,7 +15,7 @@ queryType({
     t.field('blog', {
       type: 'Blog',
       args: {
-        id: intArg({ required: true }),
+        id: app.intArg({ required: true }),
       },
       resolve(_root, args, ctx) {
         return (
@@ -33,8 +35,8 @@ queryType({
       type: 'Blog',
       list: true,
       args: {
-        name: stringArg(),
-        viewCount: intArg(),
+        name: app.stringArg(),
+        viewCount: app.intArg(),
       },
       resolve(_root, args, ctx) {
         return ctx.photon.blogs.findMany({

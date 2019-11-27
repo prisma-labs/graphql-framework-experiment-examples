@@ -1,4 +1,6 @@
-objectType({
+import { app } from 'pumpkins'
+
+app.objectType({
   name: 'Blog',
   definition(t) {
     t.model.id()

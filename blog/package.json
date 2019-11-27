@@ -12,8 +12,7 @@
     "postinstall": "yarn -s link pumpkins && chmod +x node_modules/.bin/pumpkins"
   },
   "dependencies": {
-    "pumpkins": "../../pumpkins",
-    "resolve": "^1.12.2"
+    "pumpkins": "../../pumpkins"
   },
   "devDependencies": {
     "prettier": "^1.18.2"
