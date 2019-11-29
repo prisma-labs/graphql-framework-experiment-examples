@@ -14,7 +14,7 @@ app.objectType({
     t.list.field("users", {
       type: "User",
       resolve(_root, _args, _ctx) {
-        return [{ id: "1649", name: "newton" }]
+        return [_ctx.db.users.newton]
       }
     })
   }

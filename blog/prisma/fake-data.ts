@@ -1,29 +1,24 @@
-import { Photon } from '@generated/photon'
+import { Photon } from '@prisma/photon'
 import { name } from 'faker'
 
 main()
 
 async function main() {
   const photon = new Photon()
-  const author = await photon.users.create({
+  const result = await photon.users.create({
     data: {
       name: name.firstName(),
-      blog: {},
       rating: 0.5,
+      blog: {
+        create: {
+          name: name.title(),
+        },
+      },
       role: 'AUTHOR',
     },
   })
-  const blog = await photon.blogs.create({
-    data: {
-      name: name.title(),
-      authors: {
-        connect: {
-          id: author.id,
-        },
-      },
-    },
-  })
-  console.log('added author:\n', author)
-  console.log('added blog:\n', blog)
+
+  console.log('added new author and blog:\n', result)
+
   await photon.disconnect()
 }

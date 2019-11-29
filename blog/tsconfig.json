@@ -4,9 +4,7 @@
     "module": "commonjs",
     "lib": ["esnext"],
     "rootDir": "app",
-    "strict": true,
-    "outDir": "dist",
-    "skipLibCheck": true
+    "strict": true
   },
-  "exclude": ["prisma/**/*"]
+  "include": ["app"]
 }

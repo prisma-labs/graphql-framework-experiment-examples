@@ -18,16 +18,19 @@ app.queryType({
         id: app.intArg({ required: true }),
       },
       resolve(_root, args, ctx) {
-        return (
-          ctx.photon.blogs
-            .findOne({
-              where: {
-                id: args.id,
-              },
-            })
-            // https://github.com/prisma/photonjs/issues/288
-            .then()
-        )
+        return ctx.photon.blogs
+          .findOne({
+            where: {
+              id: args.id,
+            },
+          })
+          .then(maybeBlog => {
+            if (maybeBlog === null) {
+              throw new Error(`Could not find blog with ID ${args.id}`)
+            } else {
+              return maybeBlog
+            }
+          })
       },
     })
 
