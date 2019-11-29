@@ -3,8 +3,6 @@
     "target": "es2016",
     "module": "commonjs",
     "lib": ["esnext"],
-    "rootDir": "app",
     "strict": true
-  },
-  "include": ["app"]
+  }
 }

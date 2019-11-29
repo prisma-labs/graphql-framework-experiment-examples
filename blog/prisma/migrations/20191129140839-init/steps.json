@@ -180,7 +180,7 @@
       "model": "User",
       "field": "blog",
       "type": "Blog",
-      "arity": "required"
+      "arity": "optional"
     },
     {
       "stepType": "CreateField",
