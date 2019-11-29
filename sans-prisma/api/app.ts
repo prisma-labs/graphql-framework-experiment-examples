@@ -1,3 +1,9 @@
-import { app } from "pumpkins";
+import { app } from "pumpkins"
 
-app.server.start();
+app.addContext(() => {
+  return {
+    a: 1
+  }
+})
+
+app.server.start()
