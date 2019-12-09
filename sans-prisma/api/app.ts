@@ -1,6 +1,6 @@
 import { app } from "pumpkins"
 
-app.addContext(() => {
+app.addToContext(() => {
   return {
     db: {
       users: {
