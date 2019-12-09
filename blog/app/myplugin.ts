@@ -7,7 +7,11 @@ export type Context = {
 export default {
   name: 'myplugin',
   context: {
-    typeSourcePath: __filename,
+    typeGen: {
+      fields: {
+        a: 'number',
+      },
+    },
     create() {
       return {
         a: 1,

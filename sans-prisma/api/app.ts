@@ -13,5 +13,3 @@ app.addContext(() => {
     }
   }
 })
-
-app.server.start()
