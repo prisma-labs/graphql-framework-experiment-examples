@@ -8,11 +8,11 @@
     "style": "prettier --write 'src/**/*'",
     "build": "yarn -s clean && pumpkins build",
     "dev": "pumpkins dev",
-    "data:seed": "ts-node prisma/seed.ts",
-    "postinstall": "yarn -s link pumpkins && chmod +x node_modules/.bin/pumpkins"
+    "data:seed": "ts-node prisma/seed.ts"
   },
   "dependencies": {
-    "pumpkins": "../../pumpkins"
+    "pumpkins": "^0.0.0-pr.150.08944c0",
+    "pumpkins-plugin-prisma": "^0.0.0-pr.1.208fb3f"
   },
   "devDependencies": {
     "@types/faker": "^4.1.8",
