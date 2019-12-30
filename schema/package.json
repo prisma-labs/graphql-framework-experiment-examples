@@ -1,23 +1,19 @@
 {
-  "name": "hello-pumpkins",
+  "name": "hello-santa",
   "version": "1.0.0",
   "license": "MIT",
   "dependencies": {
-    "pumpkins": "../../pumpkins"
+    "pumpkins": "../../graphql-santa"
   },
-  "devDependencies": {
-    "@types/node": "^12.12.6",
-    "prisma2": "^2.0.0-preview016.2",
-    "typescript": "^3.7.2"
-  },
+  "devDependencies": {},
   "scripts": {
     "clean": "rm -rf dist",
     "start": "node node_modules/.build",
-    "build": "pumpkins build",
-    "generate": "pumpkins generate",
-    "dev": "pumpkins dev",
-    "doctor": "pumpkins doctor",
-    "postinstall": "yarn -s link pumpkins && chmod +x node_modules/.bin/pumpkins"
+    "build": "santa build",
+    "generate": "santa generate",
+    "dev": "santa dev",
+    "doctor": "santa doctor",
+    "postinstall": "yarn -s link graphql-santa && chmod +x node_modules/.bin/santa"
   },
   "prettier": {
     "semi": false

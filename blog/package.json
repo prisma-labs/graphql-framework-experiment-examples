@@ -6,16 +6,18 @@
     "start": "node node_modules/.build",
     "clean": "rm -rf dist",
     "style": "prettier --write 'src/**/*'",
-    "build": "yarn -s clean && pumpkins build",
-    "dev": "pumpkins dev",
+    "build": "yarn -s clean && santa build",
+    "dev": "santa dev",
     "data:seed": "ts-node prisma/seed.ts"
   },
   "dependencies": {
-    "pumpkins": "^0.0.0-pr.150.08944c0",
-    "pumpkins-plugin-prisma": "^0.0.0-pr.1.208fb3f"
+    "graphql-santa": "^0.1.2",
+    "graphql-santa-plugin-prisma": "^0.1.1"
   },
   "devDependencies": {
+    "@types/debug": "^4.1.5",
     "@types/faker": "^4.1.8",
+    "@types/prompts": "^2.0.3",
     "faker": "^4.1.0",
     "prettier": "^1.18.2"
   },
