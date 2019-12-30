@@ -1,4 +1,4 @@
-import { app } from 'pumpkins'
+import { app } from 'graphql-santa'
 
 app.queryType({
   definition(t) {
