@@ -1,4 +1,6 @@
-objectType({
+import { app } from "graphql-santa"
+
+app.objectType({
   name: "User",
   definition(t) {
     t.id("id")
@@ -6,7 +8,7 @@ objectType({
   }
 })
 
-objectType({
+app.objectType({
   name: "Query",
   definition(t) {
     t.list.field("users", {

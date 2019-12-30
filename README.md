@@ -44,6 +44,11 @@ This repo supports a link workflow. The main reason we cannot put these examples
    yarn install --force
    ```
 
+1. `node_modules/.bin/santa` does not exist even after installation.
+
+   1. In your `santa` dir `../../graphql-santa` run `yarn build`
+   1. Back here, run `yarn --force`
+
 ## Details
 
 1. All examples run `yarn link pumpkins` after install so you never need to remember to do this.
