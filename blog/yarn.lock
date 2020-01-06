@@ -365,7 +365,7 @@
   dependencies:
     "@types/node" "*"
 
-"@types/debug@^4.1.5":
+"@types/debug@4.1.5":
   version "4.1.5"
   resolved "https://registry.yarnpkg.com/@types/debug/-/debug-4.1.5.tgz#b14efa8852b7768d898906613c23f688713e02cd"
   integrity sha512-Q1y515GcOdTHgagaVFhHnIFQ38ygs/kmxdNpvpou+raI9UO3YZcHDngBSYKQklcKlvA7iuQlmIKbzvmxcOE9CQ==
@@ -396,7 +396,7 @@
     "@types/express-serve-static-core" "*"
     "@types/serve-static" "*"
 
-"@types/faker@^4.1.8":
+"@types/faker@4.1.8":
   version "4.1.8"
   resolved "https://registry.yarnpkg.com/@types/faker/-/faker-4.1.8.tgz#95240361f1379addae0a005ced7c5c77b0b1e1d8"
   integrity sha512-9ARxZRyXXCMMf8KjYhnD+GHE789HGwIqa1dolCRl/C6ExwvBIUmnIktLeY71TPmFOQiU3DQwrbQEX0pkyqX1tQ==
@@ -499,7 +499,7 @@
   resolved "https://registry.yarnpkg.com/@types/normalize-package-data/-/normalize-package-data-2.4.0.tgz#e486d0d97396d79beedd0a6e33f4534ff6b4973e"
   integrity sha512-f5j5b/Gf71L+dbqxIpQ4Z2WlmI/mPJ0fOkGGmFgtb6sAu97EPczzbS3/tJKxmcYDj55OX6ssqwDAWOHIYDRDGA==
 
-"@types/prompts@^2.0.3":
+"@types/prompts@2.0.3":
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/@types/prompts/-/prompts-2.0.3.tgz#9928714a7a5c2017919f8fecef517369d27dd5df"
   integrity sha512-5+r923liPATAzRQhLTGfrRuel9vv7Mk1DZ/CJkgRrLctmM9QeOIbuVolA7wAACaw+m0Ysug85CjPbkb5ZgE1Ag==
@@ -1510,7 +1510,7 @@ express@^4.17.1:
     utils-merge "1.0.1"
     vary "~1.1.2"
 
-faker@^4.1.0:
+faker@4.1.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/faker/-/faker-4.1.0.tgz#1e45bbbecc6774b3c195fad2835109c6d748cc3f"
   integrity sha1-HkW7vsxndLPBlfrSg1EJxtdIzD8=
@@ -1729,7 +1729,7 @@ graphql-request@^1.5.0:
   dependencies:
     cross-fetch "2.2.2"
 
-graphql-santa-plugin-prisma@^0.1.1:
+graphql-santa-plugin-prisma@0.1.1:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/graphql-santa-plugin-prisma/-/graphql-santa-plugin-prisma-0.1.1.tgz#8c010776849f74fb754eb29b044aeb0f5fe83a15"
   integrity sha512-el+QBekkS2/VPAQEXU/1UEz6xb53QgfAvoP6Qv1bI388e5mtKpkYmd2u40+NltbwPhsKQR0sBt3sC9d/fWaGeQ==
@@ -1748,7 +1748,7 @@ graphql-santa-plugin-prisma@^0.1.1:
     prismjs "^1.17.1"
     stacktrace-parser "^0.1.8"
 
-graphql-santa@^0.1.2:
+graphql-santa@0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/graphql-santa/-/graphql-santa-0.1.2.tgz#10d8b5e973741062deeee60147d991c0e1d98a0a"
   integrity sha512-ArLd2fADqhSthb87bszudYSMVrCsaS2+sdNw3xQENkMb1TmfwloELaXEJ8fcxgCwWuuAbv0taJBlhvi4tGJKaw==
@@ -2776,7 +2776,7 @@ prepend-http@^2.0.0:
   resolved "https://registry.yarnpkg.com/prepend-http/-/prepend-http-2.0.0.tgz#e92434bfa5ea8c19f41cdfd401d741a3c819d897"
   integrity sha1-6SQ0v6XqjBn0HN/UAddBo8gZ2Jc=
 
-prettier@^1.18.2:
+prettier@1.19.1:
   version "1.19.1"
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.19.1.tgz#f7d7f5ff8a9cd872a7be4ca142095956a60797cb"
   integrity sha512-s7PoyDv/II1ObgQunCbB9PdLmUcBZcnWOcxDh7O0N/UwDEsHyqkW+Qh28jW+mVuCdx7gLB0BotYI1Y6uI9iyew==
