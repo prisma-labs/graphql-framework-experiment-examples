@@ -5,17 +5,27 @@
   "dependencies": {
     "graphql-santa": "../../graphql-santa"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@types/jest": "^24.0.25",
+    "jest": "^24.9.0",
+    "prettier": "^1.19.1",
+    "ts-jest": "^24.3.0"
+  },
   "scripts": {
     "clean": "rm -rf dist",
     "start": "node node_modules/.build",
     "build": "santa build",
     "generate": "santa generate",
     "dev": "santa dev",
-    "doctor": "santa doctor",
-    "postinstall": "yarn -s link graphql-santa && chmod +x node_modules/.bin/graphql-santa"
+    "doctor": "santa doctor"
   },
   "prettier": {
-    "semi": false
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node"
   }
 }

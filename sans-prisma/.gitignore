@@ -52,3 +52,5 @@ yarn-debug.log*
 yarn-error.log*
 
 .vscode
+.yalc
+yalc.lock
