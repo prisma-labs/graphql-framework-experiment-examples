@@ -13,8 +13,9 @@ app.objectType({
   definition(t) {
     t.list.field("users", {
       type: "User",
-      resolve(_root, _args, _ctx) {
-        return [_ctx.db.users.newton]
+      resolve(_root, _args, ctx) {
+        ctx.logger.debug("resolve_user")
+        return [ctx.db.users.newton]
       }
     })
   }
