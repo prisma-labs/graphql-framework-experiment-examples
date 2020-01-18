@@ -11,7 +11,7 @@
     "data:seed": "ts-node prisma/seed.ts"
   },
   "dependencies": {
-    "graphql-santa": "0.1.2",
+    "graphql-santa": "0.2.0",
     "graphql-santa-plugin-prisma": "0.1.1"
   },
   "devDependencies": {
