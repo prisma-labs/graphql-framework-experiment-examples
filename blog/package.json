@@ -16,7 +16,7 @@
   },
   "devDependencies": {
     "@types/debug": "4.1.5",
-    "@types/faker": "4.1.8",
+    "@types/faker": "4.1.9",
     "@types/jest": "^24.9.0",
     "@types/prompts": "2.0.3",
     "faker": "4.1.0",
