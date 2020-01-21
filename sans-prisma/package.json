@@ -5,7 +5,12 @@
   "dependencies": {
     "graphql-santa": "../../graphql-santa"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@types/jest": "^24.9.0",
+    "jest": "^24.9.0",
+    "prettier": "^1.19.1",
+    "ts-jest": "^24.3.0"
+  },
   "scripts": {
     "clean": "rm -rf dist",
     "start": "node node_modules/.build",
@@ -17,5 +22,9 @@
   },
   "prettier": {
     "semi": false
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node"
   }
 }

@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "esModuleInterop": true,
+    "skipLibCheck": true,
     "target": "es2016",
     "module": "commonjs",
     "lib": ["esnext"],
