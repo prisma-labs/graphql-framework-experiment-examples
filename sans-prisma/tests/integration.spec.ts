@@ -20,13 +20,5 @@ it("works", async () => {
       }
     }
   `)
-  ).toMatchInlineSnapshot(`
-    Object {
-      "users": Array [
-        Object {
-          "id": "1",
-        },
-      ],
-    }
-  `)
+  ).toMatchInlineSnapshot()
 })

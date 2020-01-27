@@ -1,4 +1,4 @@
-import { app } from "graphql-santa"
+import { app } from "nexus-future"
 
 app.addToContext(() => {
   return {
