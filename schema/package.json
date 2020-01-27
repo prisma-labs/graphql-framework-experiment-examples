@@ -1,19 +1,19 @@
 {
-  "name": "hello-santa",
+  "name": "hello-nexus-future",
   "version": "1.0.0",
   "license": "MIT",
   "dependencies": {
-    "pumpkins": "../../graphql-santa"
+    "pumpkins": "../../../nexus/nexus-future"
   },
   "devDependencies": {},
   "scripts": {
     "clean": "rm -rf dist",
     "start": "node node_modules/.build",
-    "build": "santa build",
-    "generate": "santa generate",
-    "dev": "santa dev",
-    "doctor": "santa doctor",
-    "postinstall": "yarn -s link graphql-santa && chmod +x node_modules/.bin/santa"
+    "build": "nexus-future build",
+    "generate": "nexus-future generate",
+    "dev": "nexus-future dev",
+    "doctor": "nexus-future doctor",
+    "postinstall": "yarn -s link nexus-future && chmod +x node_modules/.bin/nexus-future"
   },
   "prettier": {
     "semi": false
