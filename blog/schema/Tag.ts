@@ -1,9 +1,21 @@
-import { app } from 'graphql-santa'
+import { app } from 'nexus-future'
 
 app.objectType({
   name: 'Tag',
   definition(t) {
     t.model.id()
-    t.model.label()
+
+    // Normally we would write the following as:
+    //
+    //   t.model.label()
+    //
+    // But this shows how prisma plugin augments the graphql backing types
+    //
+    t.field('label', {
+      type: 'String',
+      resolve(parent) {
+        return parent.label
+      },
+    })
   },
 })

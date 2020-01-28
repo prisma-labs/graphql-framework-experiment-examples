@@ -4,6 +4,8 @@
     "target": "es2016",
     "module": "commonjs",
     "lib": ["esnext"],
-    "strict": true
+    "strict": true,
+    "esModuleInterop": true,
+    "plugins": [{ "name": "../../../../nexus-typescript-service" }]
   }
 }

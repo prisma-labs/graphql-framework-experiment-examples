@@ -1,4 +1,4 @@
-import { app } from 'graphql-santa'
+import { app } from 'nexus-future'
 
 app.queryType({
   definition(t) {
@@ -7,6 +7,11 @@ app.queryType({
     })
     t.crud.users({ filtering: true, alias: 'people' })
     t.crud.posts({ type: 'CustomPost', ordering: true, filtering: true })
+
+    t.field('foo', {
+      type: 'Blog',
+      auth: false,
+    })
 
     //
     // Examples showing custom resolvers

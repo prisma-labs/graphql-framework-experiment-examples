@@ -1,4 +1,6 @@
-import { app } from 'graphql-santa'
+import { app } from 'nexus-future'
+
+app.logger.setLevel('debug')
 
 app.objectType({
   name: 'CustomPost',

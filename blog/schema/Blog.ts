@@ -1,12 +1,10 @@
-import { app } from 'graphql-santa'
+import { app } from 'nexus-future'
 
-app.objectType({
+app.app.objectType({
   name: 'Blog',
   definition(t) {
     t.model.id()
     t.model.name()
-    t.model.createdAt()
-    t.model.updatedAt()
     t.model.posts({
       type: 'CustomPost',
       pagination: false,
