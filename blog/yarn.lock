@@ -421,10 +421,36 @@
   dependencies:
     debug "^4.1.1"
 
-"@prisma/sdk@^0.0.172", "@prisma/sdk@latest":
+"@prisma/sdk@^0.0.172":
   version "0.0.172"
   resolved "https://registry.yarnpkg.com/@prisma/sdk/-/sdk-0.0.172.tgz#42426d4c37ce46ed108cbeb60bcb3544b9f61642"
   integrity sha512-XrfPOKTaW6Hh1pQZWqOWA5bN5M8evY5nqGMTaG0i2qSxNyannG+5PaVOy3DxshSDb27e2X0dt+gFbis+hy19fQ==
+  dependencies:
+    "@apexearth/copy" "^1.4.4"
+    "@prisma/engine-core" "2.0.41"
+    "@prisma/fetch-engine" "0.3.34"
+    "@prisma/generator-helper" "0.0.29"
+    "@prisma/get-platform" "0.1.23"
+    chalk "^3.0.0"
+    execa "^3.4.0"
+    flat-map-polyfill "^0.3.8"
+    is-ci "^2.0.0"
+    make-dir "^3.0.0"
+    p-map "^3.0.0"
+    prompts "^2.3.0"
+    read-pkg-up "^7.0.0"
+    resolve-pkg "^2.0.0"
+    rimraf "^3.0.0"
+    tar "^5.0.5"
+    temp-write "^4.0.0"
+    tempy "^0.3.0"
+    terminal-link "^2.1.1"
+    url-parse "^1.4.7"
+
+"@prisma/sdk@latest":
+  version "0.0.173"
+  resolved "https://registry.yarnpkg.com/@prisma/sdk/-/sdk-0.0.173.tgz#7bab6332ccf9dca4afcceb6790f101282032c12c"
+  integrity sha512-JsgNluN+YDWo0ZELPCFE2VQVOUSpTdiLpV4j1VSCqRxRIRkx76aPQ4Qq9OuDK8bO/xxPHlk+4qaWa37Nwjrxcw==
   dependencies:
     "@apexearth/copy" "^1.4.4"
     "@prisma/engine-core" "2.0.41"
@@ -1621,9 +1647,9 @@ deep-is@~0.1.3:
   integrity sha1-s2nW+128E+7PUk+RsHD+7cNXzzQ=
 
 defer-to-connect@^1.0.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/defer-to-connect/-/defer-to-connect-1.1.1.tgz#88ae694b93f67b81815a2c8c769aef6574ac8f2f"
-  integrity sha512-J7thop4u3mRTkYRQ+Vpfwy2G5Ehoy82I14+14W4YMDLKdWloI9gSzRbV30s/NckQGVJtPkWNcW4oMAUigTdqiQ==
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/defer-to-connect/-/defer-to-connect-1.1.2.tgz#10aac87c9d9bd3c92b03ded222f93f83a19b6d19"
+  integrity sha512-pEsi2ZYLO+GroqxmPjoeKoxgZLIm4pUr6YLghbMAHXpu2vwgo910E5yfUWY39jE8zZFkhPUX4IIeWxzPxzQ1DA==
 
 define-properties@^1.1.2, define-properties@^1.1.3:
   version "1.1.3"
@@ -3691,10 +3717,10 @@ negotiator@0.6.2:
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.2.tgz#feacf7ccf525a77ae9634436a64883ffeca346fb"
   integrity sha512-hZXc7K2e+PgeI1eDBe/10Ard4ekbfrrqG8Ep+8Jmf4JID2bNg7NvCPOZN+kfF574pFQI7mum2AUqDidoKqcTOw==
 
-nexus-future@^0.5.0:
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/nexus-future/-/nexus-future-0.5.0.tgz#a589fcbf426d015fa9bfa71bf9a00d73bb546869"
-  integrity sha512-peb1RfNaD1JCBXP952ndWtXcptwMgeTaUg7v9E87uIWiU57+a4BSTPeNoowyxdaVtzni9Vua0d8yX6EL6/7dww==
+nexus-future@^0.5.1-next.1:
+  version "0.5.1-next.2"
+  resolved "https://registry.yarnpkg.com/nexus-future/-/nexus-future-0.5.1-next.2.tgz#f2c41df914460f335e6a79daba6c2de656a9a4f3"
+  integrity sha512-FqyEjkEW4D7xZ1g3E/XfvG3qqNcvH88TuJfmWg+f4oo8qpuf6TcWa1UqZo9RoUI+g6hGQbhOQraFBeSOvV5JFw==
   dependencies:
     "@nexus/schema" "^0.12.0-rc.9"
     "@types/debug" "^4.1.5"
