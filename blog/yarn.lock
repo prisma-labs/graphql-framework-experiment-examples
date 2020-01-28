@@ -448,9 +448,9 @@
     url-parse "^1.4.7"
 
 "@prisma/sdk@latest":
-  version "0.0.173"
-  resolved "https://registry.yarnpkg.com/@prisma/sdk/-/sdk-0.0.173.tgz#7bab6332ccf9dca4afcceb6790f101282032c12c"
-  integrity sha512-JsgNluN+YDWo0ZELPCFE2VQVOUSpTdiLpV4j1VSCqRxRIRkx76aPQ4Qq9OuDK8bO/xxPHlk+4qaWa37Nwjrxcw==
+  version "0.0.175"
+  resolved "https://registry.yarnpkg.com/@prisma/sdk/-/sdk-0.0.175.tgz#62367d9b3c724bab1496a260d4ff6e33194d574e"
+  integrity sha512-/qzDjrC62vCYCV0pfAmPfJl0xPDO3BBUlgDjJF+3aEKchm/+3TxqOm5wP3YakkgVtiw+9D497XZ4hHpLuhh3sg==
   dependencies:
     "@apexearth/copy" "^1.4.4"
     "@prisma/engine-core" "2.0.41"
@@ -1647,9 +1647,9 @@ deep-is@~0.1.3:
   integrity sha1-s2nW+128E+7PUk+RsHD+7cNXzzQ=
 
 defer-to-connect@^1.0.1:
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/defer-to-connect/-/defer-to-connect-1.1.2.tgz#10aac87c9d9bd3c92b03ded222f93f83a19b6d19"
-  integrity sha512-pEsi2ZYLO+GroqxmPjoeKoxgZLIm4pUr6YLghbMAHXpu2vwgo910E5yfUWY39jE8zZFkhPUX4IIeWxzPxzQ1DA==
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/defer-to-connect/-/defer-to-connect-1.1.3.tgz#331ae050c08dcf789f8c83a7b81f0ed94f4ac591"
+  integrity sha512-0ISdNousHvZT2EiFlZeZAHBUvSxmKswVCEf8hW7KWgG4a8MVEu/3Vb6uWYozkjylyCxe0JBIiRB1jV45S70WVQ==
 
 define-properties@^1.1.2, define-properties@^1.1.3:
   version "1.1.3"
@@ -3718,9 +3718,9 @@ negotiator@0.6.2:
   integrity sha512-hZXc7K2e+PgeI1eDBe/10Ard4ekbfrrqG8Ep+8Jmf4JID2bNg7NvCPOZN+kfF574pFQI7mum2AUqDidoKqcTOw==
 
 nexus-future@^0.5.1-next.1:
-  version "0.5.1-next.2"
-  resolved "https://registry.yarnpkg.com/nexus-future/-/nexus-future-0.5.1-next.2.tgz#f2c41df914460f335e6a79daba6c2de656a9a4f3"
-  integrity sha512-FqyEjkEW4D7xZ1g3E/XfvG3qqNcvH88TuJfmWg+f4oo8qpuf6TcWa1UqZo9RoUI+g6hGQbhOQraFBeSOvV5JFw==
+  version "0.5.1-next.3"
+  resolved "https://registry.yarnpkg.com/nexus-future/-/nexus-future-0.5.1-next.3.tgz#9192847d4cdcb2f9b56c9ff64e3d80e1504bd394"
+  integrity sha512-oP+RuBbogcQhYpm+TxWaIiDVn+q5Z+SjUlVu+LmboiPhRvEkuYZ6B2V2Urc17Em3FJ33LzJEcX76ov8Adlb6Tw==
   dependencies:
     "@nexus/schema" "^0.12.0-rc.9"
     "@types/debug" "^4.1.5"
