@@ -8,11 +8,6 @@ app.queryType({
     t.crud.users({ filtering: true, alias: 'people' })
     t.crud.posts({ type: 'CustomPost', ordering: true, filtering: true })
 
-    t.field('foo', {
-      type: 'Blog',
-      auth: false,
-    })
-
     //
     // Examples showing custom resolvers
     //
@@ -23,7 +18,7 @@ app.queryType({
         id: app.intArg({ required: true }),
       },
       resolve(_root, args, ctx) {
-        return ctx.photon.blogs
+        return ctx.db.blogs
           .findOne({
             where: {
               id: args.id,
@@ -47,7 +42,7 @@ app.queryType({
         viewCount: app.intArg(),
       },
       resolve(_root, args, ctx) {
-        return ctx.photon.blogs.findMany({
+        return ctx.db.blogs.findMany({
           where: {
             name: args.name,
             viewCount: args.viewCount,

@@ -1,11 +1,11 @@
-import { Photon } from '@prisma/photon'
+import { PrismaClient } from '@prisma/client'
 import { name } from 'faker'
 
 main()
 
 async function main() {
-  const photon = new Photon()
-  const result = await photon.users.create({
+  const db = new PrismaClient()
+  const result = await db.users.create({
     data: {
       name: name.firstName(),
       rating: 0.5,
@@ -20,5 +20,5 @@ async function main() {
 
   console.log('added new author and blog:\n', result)
 
-  await photon.disconnect()
+  await db.disconnect()
 }

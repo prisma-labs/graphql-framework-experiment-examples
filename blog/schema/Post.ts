@@ -1,6 +1,6 @@
 import { app } from 'nexus-future'
 
-app.logger.settings({ lebel: 'debug' })
+app.logger.settings({ level: 'debug' })
 
 app.objectType({
   name: 'CustomPost',
