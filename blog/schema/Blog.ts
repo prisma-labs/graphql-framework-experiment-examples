@@ -1,6 +1,5 @@
 import { app } from 'nexus-future'
-
-app.objectType({
+app.schema.objectType({
   name: 'Blog',
   definition(t) {
     t.model.id()

@@ -1,6 +1,6 @@
 import { app } from 'nexus-future'
 
-app.queryType({
+app.schema.queryType({
   definition(t) {
     t.crud.blogs({
       pagination: false,
@@ -15,7 +15,7 @@ app.queryType({
     t.field('blog', {
       type: 'Blog',
       args: {
-        id: app.intArg({ required: true }),
+        id: app.schema.intArg({ required: true }),
       },
       resolve(_root, args, ctx) {
         return ctx.db.blogs
@@ -38,8 +38,8 @@ app.queryType({
       type: 'Blog',
       list: true,
       args: {
-        name: app.stringArg(),
-        viewCount: app.intArg(),
+        name: app.schema.stringArg(),
+        viewCount: app.schema.intArg(),
       },
       resolve(_root, args, ctx) {
         return ctx.db.blogs.findMany({

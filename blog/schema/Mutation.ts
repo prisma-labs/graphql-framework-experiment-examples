@@ -1,6 +1,6 @@
 import { app } from 'nexus-future'
 
-app.mutationType({
+app.schema.mutationType({
   definition(t) {
     t.crud.createOneBlog()
     t.crud.updateManyBlog()

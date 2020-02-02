@@ -1,5 +1,7 @@
 import { app } from "nexus-future"
 
+app.adfdsf()
+
 app.addToContext(() => {
   return {
     db: {

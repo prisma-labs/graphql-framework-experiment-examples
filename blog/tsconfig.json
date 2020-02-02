@@ -1,11 +1,7 @@
 {
   "compilerOptions": {
     "skipLibCheck": true,
-    "target": "es2016",
-    "module": "commonjs",
-    "lib": ["esnext"],
-    "strict": true,
-    "esModuleInterop": true,
-    "plugins": [{ "name": "../../../../nexus-typescript-service" }]
+    "strict": true
+    // "plugins": [{ "name": "../../../../nexus-typescript-service" }]
   }
 }

@@ -2,7 +2,7 @@ import { app } from 'nexus-future'
 
 app.logger.settings({ level: 'debug' })
 
-app.objectType({
+app.schema.objectType({
   name: 'CustomPost',
   definition(t) {
     t.model('Post').id()
