@@ -1,9 +1,21 @@
-import { app } from 'nexus-future'
+import { log, settings } from 'nexus-future'
 
-app.schema.settings({
-  connections: {
-    types: {
-      foobar: {},
+settings.change({
+  logger: {
+    level: 'trace',
+  },
+  schema: {
+    connections: {
+      types: {
+        foobar: {},
+        toto: {},
+      },
+    },
+  },
+  server: {
+    startMessage: info => {
+      settings.original.server.startMessage(info)
+      log.warn('piggy back message!')
     },
   },
 })

@@ -1,6 +1,6 @@
-import { app } from 'nexus-future'
+import { schema } from 'nexus-future'
 
-app.schema.objectType({
+schema.objectType({
   name: 'User',
   definition(t) {
     t.model.id()
