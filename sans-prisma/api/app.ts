@@ -1,8 +1,6 @@
-import { app } from "nexus-future"
+import { schema } from "nexus-future"
 
-app.adfdsf()
-
-app.addToContext(() => {
+schema.addToContext(() => {
   return {
     db: {
       users: {

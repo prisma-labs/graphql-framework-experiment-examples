@@ -1,8 +1,8 @@
-import { app } from "nexus-future"
+import { log, schema } from "nexus-future"
 
-app.logger.info("boot")
+log.info("boot")
 
-app.objectType({
+schema.objectType({
   name: "User",
   definition(t) {
     t.field("id", { type: "ID" })
@@ -10,13 +10,13 @@ app.objectType({
   }
 })
 
-app.objectType({
+schema.objectType({
   name: "Query",
   definition(t) {
     t.list.field("users", {
       type: "User",
       resolve(_root, _args, ctx) {
-        ctx.logger.debug("resolve", {
+        ctx.log.debug("resolve", {
           object: "Query",
           field: "users",
           type: "[User]"
