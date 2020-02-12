@@ -21,7 +21,7 @@
     "dev": "nexus dev",
     "doctor": "nexus doctor",
     "test": "jest",
-    "postinstall": "yarn -s link nexus-future && chmod +x node_modules/.bin/nexus-future"
+    "postinstall": "yarn -s link nexus-future && chmod +x node_modules/.bin/nexus"
   },
   "prettier": {
     "semi": false

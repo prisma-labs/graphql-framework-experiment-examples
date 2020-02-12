@@ -6,8 +6,8 @@
     "start": "node node_modules/.build",
     "clean": "rm -rf dist",
     "style": "prettier --write 'src/**/*'",
-    "build": "yarn -s clean && nexus-future build",
-    "dev": "nexus-future dev",
+    "build": "yarn -s clean && nexus build",
+    "dev": "nexus dev",
     "data:seed": "ts-node prisma/seed.ts"
   },
   "dependencies": {
