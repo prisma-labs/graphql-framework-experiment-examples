@@ -1,6 +1,4 @@
-import { log, schema } from "nexus-future"
-
-log.info("boot")
+import { schema } from "nexus-future"
 
 schema.objectType({
   name: "User",
