@@ -1,6 +1,6 @@
-import { app } from "nexus-future"
+import { schema } from "nexus-future"
 
-app.objectType({
+schema.objectType({
   name: "User",
   definition(t) {
     t.id("id")
@@ -8,7 +8,7 @@ app.objectType({
   }
 })
 
-app.objectType({
+schema.objectType({
   name: "Query",
   definition(t) {
     t.list.field("users", {
