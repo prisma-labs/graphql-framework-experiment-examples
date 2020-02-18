@@ -1,9 +1,10 @@
 {
-  "name": "with-fastify-gql",
+  "name": "custom-server-fastify-gql",
   "version": "1.0.0",
   "license": "MIT",
   "dependencies": {
-    "apollo-server": "^2.10.0",
+    "fastify": "^2.12.0",
+    "fastify-gql": "^3.0.5",
     "nexus-future": "../../../nexus/nexus-future"
   },
   "devDependencies": {

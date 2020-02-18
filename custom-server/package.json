@@ -1,11 +1,13 @@
 {
-  "name": "sans-prisma",
+  "name": "custom-server",
   "version": "1.0.0",
   "license": "MIT",
   "dependencies": {
-    "nexus-future": "file:../../../nexus/nexus-future"
+    "cors": "^2.8.5",
+    "nexus-future": "../../../nexus/nexus-future"
   },
   "devDependencies": {
+    "@types/cors": "^2.8.6",
     "@types/jest": "^24.9.0",
     "jest": "^24.9.0",
     "prettier": "^1.19.1",
@@ -18,6 +20,7 @@
     "generate": "nexus generate",
     "dev": "nexus dev",
     "doctor": "nexus doctor",
+    "test": "jest",
     "postinstall": "yarn -s link nexus-future && chmod +x node_modules/.bin/nexus"
   },
   "prettier": {
