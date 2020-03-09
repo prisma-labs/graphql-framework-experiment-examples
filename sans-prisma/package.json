@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "license": "MIT",
   "dependencies": {
-    "nexus-future": "file:../../../nexus/nexus-future"
+    "nexus-future": "file:../../../graphql-nexus/nexus-future"
   },
   "devDependencies": {
     "@types/jest": "^24.9.0",

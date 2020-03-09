@@ -1,7 +1,8 @@
-import { schema } from "nexus-future"
+import { schema, settings } from "nexus-future"
 
-schema.addToContext(() => {
+schema.addToContext(req => {
   return {
+    req,
     db: {
       users: {
         newton: {
@@ -11,5 +12,11 @@ schema.addToContext(() => {
         }
       }
     }
+  }
+})
+
+settings.change({
+  schema: {
+    generateGraphQLSDLFile: "api.graphql"
   }
 })
