@@ -1,15 +1,19 @@
-# nexus-future-examples
+# examples
 
-This repo supports a link workflow. The main reason we cannot put these examples into the nexus-future repo is because linking within the link source seems to get us into an `ELOOP` error.
+This repo includes various examples using [Nexus](https://nexusjs.org).
 
-## Getting Started
+## Development Workflow
 
-1. Checkout and link the [`nexus-future`](https://github.com/graphql-nexus/nexus-future) repo.
+The following describes how to leverage these examples in conjunction with development on the framework itself.
+
+### Getting Started
+
+1. Checkout and link [`nexus-future`](https://github.com/graphql-nexus/nexus-future).
 
    ```
-   mkdir -p ~/projects/nexus
-   git clone graphql-nexus/nexus-future ~/projects/nexus/nexus-future
-   cd ~/projects/nexus/nexus-future
+   mkdir -p ~/projects/graphql-nexus
+   git clone graphql-nexus/nexus-future ~/projects/graphql-nexus/nexus-future
+   cd ~/projects/graphql-nexus/nexus-future
 
    yarn link
    ```
@@ -17,9 +21,9 @@ This repo supports a link workflow. The main reason we cannot put these examples
 2. Checkout this repo. Must be a peer folder to `nexus-future` (see details).
 
    ```
-   mkdir -p ~/projects/prisma-labs
-   git clone primsa-labs/nexus-future-examples ~/projects/prisma-labs/nexus-future-examples
-   cd ~/projects/prisma-labs/nexus-future-examples
+   mkdir -p ~/projects/graphql-nexus
+   git clone graphql-nexus/examples ~/projects/graphql-nexus/examples
+   cd ~/projects/graphql-nexus/examples
    ```
 
 3. For each example in this repo that you want to work with
@@ -32,11 +36,11 @@ This repo supports a link workflow. The main reason we cannot put these examples
 4. Now that you are linked up for one or more examples. Enter dev mode in `nexus-future` to begin your feedback loop.
 
    ```
-   cd ~/projects/nexus/nexus-future
+   cd ~/projects/graphql-nexus/nexus-future
    yarn dev
    ```
 
-## Gotchyas
+### Gotchyas
 
 1. Transient dependencies installed inside an example app via its `"nexus-future": "../../../nexus/nexus-future"` dep are not linked/dynamic meaning if the dependency tree of nexus-future changes you need to take manual action to reflect this change in the examples:
 
@@ -46,10 +50,10 @@ This repo supports a link workflow. The main reason we cannot put these examples
 
 1. `node_modules/.bin/nexus-future` does not exist even after installation.
 
-   1. In your `nexus-future` project run `yarn build`
-   1. Back here, run `yarn --force`
+   1. In the `nexus-future` project run `yarn build`
+   2. In an example run `yarn --force`
 
-## Details
+### Details
 
 1. All examples run `yarn link nexus-future` after install so you never need to remember to do this.
 
