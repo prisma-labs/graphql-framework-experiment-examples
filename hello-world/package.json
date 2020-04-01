@@ -6,10 +6,10 @@
     "nexus": "file:../../nexus"
   },
   "devDependencies": {
-    "@types/jest": "^24.9.0",
-    "jest": "^24.9.0",
-    "prettier": "^1.19.1",
-    "ts-jest": "^24.3.0"
+    "@types/jest": "^25.1.4",
+    "jest": "^25.2.4",
+    "prettier": "^2.0.2",
+    "ts-jest": "^25.3.0"
   },
   "scripts": {
     "clean": "rm -rf dist",
@@ -17,6 +17,7 @@
     "build": "nexus build",
     "generate": "nexus generate",
     "dev": "nexus dev",
+    "test": "jest",
     "doctor": "nexus doctor",
     "postinstall": "yarn -s link nexus && chmod +x node_modules/.bin/nexus"
   },
