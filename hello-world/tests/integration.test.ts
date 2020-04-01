@@ -14,11 +14,11 @@ afterAll(async () => {
 it("works", async () => {
   expect(
     await ctx.app.query(`
-    query {
-      users {
-        id
+      query {
+        users {
+          id
+        }
       }
-    }
-  `)
+    `)
   ).toMatchInlineSnapshot()
 })
