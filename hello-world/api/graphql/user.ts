@@ -5,7 +5,7 @@ schema.objectType({
   definition(t) {
     t.field("id", { type: "ID" })
     t.field("name", { type: "String" })
-  }
+  },
 })
 
 schema.objectType({
@@ -17,10 +17,10 @@ schema.objectType({
         ctx.log.debug("resolve", {
           object: "Query",
           field: "users",
-          type: "[User]"
+          type: "[User]",
         })
         return [ctx.db.users.newton]
-      }
+      },
     })
-  }
+  },
 })

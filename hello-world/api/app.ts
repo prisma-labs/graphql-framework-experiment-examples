@@ -1,6 +1,6 @@
 import { schema, settings } from "nexus"
 
-schema.addToContext(req => {
+schema.addToContext((req) => {
   return {
     req,
     db: {
@@ -8,15 +8,15 @@ schema.addToContext(req => {
         newton: {
           id: "1",
           birthyear: "1649",
-          name: "Newton"
-        }
-      }
-    }
+          name: "Newton",
+        },
+      },
+    },
   }
 })
 
 settings.change({
   schema: {
-    generateGraphQLSDLFile: "api.graphql"
-  }
+    generateGraphQLSDLFile: "api.graphql",
+  },
 })
