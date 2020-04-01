@@ -3,10 +3,10 @@
 
 
 type Query {
-  users: [User!]!
+  users: [User!]
 }
 
 type User {
-  id: ID!
-  name: String!
+  id: ID
+  name: String
 }

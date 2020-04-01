@@ -1,4 +1,4 @@
-import { schema, settings } from "nexus-future"
+import { schema, settings } from "nexus"
 
 schema.addToContext(req => {
   return {

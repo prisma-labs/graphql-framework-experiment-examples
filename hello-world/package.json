@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "license": "MIT",
   "dependencies": {
-    "nexus-future": "file:../../nexus-future"
+    "nexus": "file:../../nexus"
   },
   "devDependencies": {
     "@types/jest": "^24.9.0",
@@ -18,7 +18,7 @@
     "generate": "nexus generate",
     "dev": "nexus dev",
     "doctor": "nexus doctor",
-    "postinstall": "yarn -s link nexus-future && chmod +x node_modules/.bin/nexus"
+    "postinstall": "yarn -s link nexus && chmod +x node_modules/.bin/nexus"
   },
   "prettier": {
     "semi": false
