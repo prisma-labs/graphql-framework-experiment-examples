@@ -1,4 +1,4 @@
-import { log, settings } from 'nexus-future'
+import { log, settings } from 'nexus'
 
 settings.change({
   logger: {
@@ -6,10 +6,8 @@ settings.change({
   },
   schema: {
     connections: {
-      types: {
-        foobar: {},
-        toto: {},
-      },
+      foobar: {},
+      toto: {},
     },
   },
   server: {

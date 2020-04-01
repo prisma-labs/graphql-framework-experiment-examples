@@ -4,6 +4,7 @@
   "version": "0.0.0",
   "scripts": {
     "start": "node node_modules/.build",
+    "test": "jest",
     "clean": "rm -rf dist",
     "style": "prettier --write 'src/**/*'",
     "build": "yarn -s clean && nexus build",
@@ -12,23 +13,22 @@
   },
   "dependencies": {
     "@nexus/typescript-language-service": "^0.1.0-next.3",
-    "nexus-future": "../../nexus-future",
-    "nexus-plugin-prisma": "^0.3.1"
+    "nexus": "../../nexus",
+    "nexus-plugin-prisma": "^0.6.0"
   },
   "devDependencies": {
     "@types/debug": "4.1.5",
-    "@types/faker": "4.1.9",
+    "@types/faker": "4.1.11",
     "@types/jest": "^25.1.0",
-    "@types/prompts": "2.0.3",
+    "@types/prompts": "2.0.5",
     "faker": "4.1.0",
     "jest": "^25.1.0",
-    "prettier": "1.19.1",
+    "prettier": "2.0.2",
     "ts-jest": "^25.0.0"
   },
   "prettier": {
     "semi": false,
-    "singleQuote": true,
-    "trailingComma": "es5"
+    "singleQuote": true
   },
   "jest": {
     "preset": "ts-jest",
