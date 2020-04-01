@@ -1,4 +1,4 @@
-import { createTestContext, TestContext } from "graphql-santa/testing"
+import { createTestContext, TestContext } from "nexus/testing"
 
 let ctx: TestContext
 
