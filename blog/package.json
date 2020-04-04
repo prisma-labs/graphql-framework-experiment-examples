@@ -12,19 +12,19 @@
     "data:seed": "ts-node prisma/seed.ts"
   },
   "dependencies": {
-    "@nexus/typescript-language-service": "^0.1.0-next.3",
-    "nexus": "^0.20.0-next.10",
-    "nexus-plugin-prisma": "^0.6.0"
+    "@nexus/typescript-language-service": "0.1.0-next.3",
+    "nexus": "0.20.0-next.10",
+    "nexus-plugin-prisma": "0.6.0"
   },
   "devDependencies": {
     "@types/debug": "4.1.5",
     "@types/faker": "4.1.11",
-    "@types/jest": "^25.1.0",
+    "@types/jest": "25.1.4",
     "@types/prompts": "2.0.5",
     "faker": "4.1.0",
-    "jest": "^25.1.0",
+    "jest": "25.2.4",
     "prettier": "2.0.2",
-    "ts-jest": "^25.0.0"
+    "ts-jest": "25.3.0"
   },
   "prettier": {
     "semi": false,
