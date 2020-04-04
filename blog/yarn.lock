@@ -415,7 +415,7 @@
     iterall "^1.2.2"
     tslib "^1.9.3"
 
-"@nexus/typescript-language-service@^0.1.0-next.3":
+"@nexus/typescript-language-service@0.1.0-next.3":
   version "0.1.0-next.3"
   resolved "https://registry.yarnpkg.com/@nexus/typescript-language-service/-/typescript-language-service-0.1.0-next.3.tgz#629dea64d02fdec8ad3a4b51d5c53e23421909fb"
   integrity sha512-3NCfqo0CuqW+kBj7/n6sLXCOc4OKE0yk4AJ5kTm659hCw60l96iRrlM4dxahRGVVWHxSv5PbxMp0Fhzd2Z1h9Q==
@@ -742,7 +742,7 @@
     "@types/istanbul-lib-coverage" "*"
     "@types/istanbul-lib-report" "*"
 
-"@types/jest@^25.1.0":
+"@types/jest@25.1.4":
   version "25.1.4"
   resolved "https://registry.yarnpkg.com/@types/jest/-/jest-25.1.4.tgz#9e9f1e59dda86d3fd56afce71d1ea1b331f6f760"
   integrity sha512-QDDY2uNAhCV7TMCITrxz+MRk1EizcsevzfeS6LykIlq2V1E5oO4wXG8V2ZEd9w7Snxeeagk46YbMgZ8ESHx3sw==
@@ -3303,7 +3303,7 @@ jest-worker@^25.2.1:
     merge-stream "^2.0.0"
     supports-color "^7.0.0"
 
-jest@^25.1.0:
+jest@25.2.4:
   version "25.2.4"
   resolved "https://registry.yarnpkg.com/jest/-/jest-25.2.4.tgz#d10941948a2b57eb7accc2e7ae78af4a0e11b40a"
   integrity sha512-Lu4LXxf4+durzN/IFilcAoQSisOwgHIXgl9vffopePpSSwFqfj1Pj4y+k3nL8oTbnvjxgDIsEcepy6he4bWqnQ==
@@ -3752,7 +3752,7 @@ negotiator@0.6.2:
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.2.tgz#feacf7ccf525a77ae9634436a64883ffeca346fb"
   integrity sha512-hZXc7K2e+PgeI1eDBe/10Ard4ekbfrrqG8Ep+8Jmf4JID2bNg7NvCPOZN+kfF574pFQI7mum2AUqDidoKqcTOw==
 
-nexus-plugin-prisma@^0.6.0:
+nexus-plugin-prisma@0.6.0:
   version "0.6.0"
   resolved "https://registry.yarnpkg.com/nexus-plugin-prisma/-/nexus-plugin-prisma-0.6.0.tgz#cc8efb16d45e8e4e7094b9be3bb7f818b38ae084"
   integrity sha512-S0Hje0d7kSxddpNILjrFs1z1ecj95kuANrhGss24GbbF+uxGXwvrcetaM3e477CcZ3ddWdQ4780zIqkdRKQGsA==
@@ -3779,7 +3779,7 @@ nexus-prisma@^0.12.0:
     fs-extra "^8.1.0"
     pluralize "^8.0.0"
 
-nexus@^0.20.0-next.10:
+nexus@0.20.0-next.10:
   version "0.20.0-next.10"
   resolved "https://registry.yarnpkg.com/nexus/-/nexus-0.20.0-next.10.tgz#250fc9a0fbee32322909a67158283fcc80257f18"
   integrity sha512-XOxZ+mEAhhd1bbUFi9aeVVQXnzA/Jhq3XfBVo8QxDOkegEqJ54dlyGgzZfJALw5QpvA+uQ/Jud6I38klaxHnew==
@@ -5163,7 +5163,7 @@ ts-interface-checker@^0.1.9:
   resolved "https://registry.yarnpkg.com/ts-interface-checker/-/ts-interface-checker-0.1.10.tgz#b68a49e37e90a05797e590f08494dd528bf383cf"
   integrity sha512-UJYuKET7ez7ry0CnvfY6fPIUIZDw+UI3qvTUQeS2MyI4TgEeWAUBqy185LeaHcdJ9zG2dgFpPJU/AecXU0Afug==
 
-ts-jest@^25.0.0:
+ts-jest@25.3.0:
   version "25.3.0"
   resolved "https://registry.yarnpkg.com/ts-jest/-/ts-jest-25.3.0.tgz#c12d34573cbe34d49f10567940e44fd19d1c9178"
   integrity sha512-qH/uhaC+AFDU9JfAueSr0epIFJkGMvUPog4FxSEVAtPOur1Oni5WBJMiQIkfHvc7PviVRsnlVLLY2I6221CQew==
