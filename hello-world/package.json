@@ -20,7 +20,7 @@
     "dev": "nexus dev",
     "test": "jest",
     "doctor": "nexus doctor",
-    "postinstall": "yarn -s link nexus && chmod +x node_modules/.bin/nexus"
+    "link:nexus": "yarn -s link nexus && chmod +x node_modules/.bin/nexus"
   },
   "prettier": {
     "semi": false
