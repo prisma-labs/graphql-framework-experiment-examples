@@ -1,24 +1,19 @@
-import { createTestContext, TestContext } from "nexus/testing"
-
-let ctx: TestContext
-
-beforeAll(async () => {
-  ctx = await createTestContext()
-  await ctx.app.server.start()
-})
-
-afterAll(async () => {
-  await ctx.app.server.stop()
-})
-
 it("works", async () => {
   expect(
-    await ctx.app.query(`
+    await nexus.app.query(`
       query {
         users {
           id
         }
       }
     `)
-  ).toMatchInlineSnapshot()
+  ).toMatchInlineSnapshot(`
+    Object {
+      "users": Array [
+        Object {
+          "id": "1",
+        },
+      ],
+    }
+  `)
 })
