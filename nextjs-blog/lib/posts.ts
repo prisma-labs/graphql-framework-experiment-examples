@@ -1,33 +1,28 @@
-import fs from "fs";
-import matter from "gray-matter";
-import path from "path";
-import remark from "remark";
-import html from "remark-html";
+import { request } from "graphql-request";
 
-const postsDirectory = path.join(process.cwd(), "posts");
+type Post = {
+  date: string;
+  content: string;
+  id: string;
+  title: string;
+};
 
-export function getSortedPostsData() {
-  // Get file names under /posts
-  const fileNames = fs.readdirSync(postsDirectory);
-  const allPostsData = fileNames.map((fileName) => {
-    // Remove ".md" from file name to get id
-    const id = fileName.replace(/\.md$/, "");
+export async function getSortedPosts(): Promise<Post[]> {
+  const query = `{
+    posts {
+      id
+      title
+      date
+      content
+    }
+  }`;
 
-    // Read markdown file as string
-    const fullPath = path.join(postsDirectory, fileName);
-    const fileContents = fs.readFileSync(fullPath, "utf8");
+  const data: { posts: Post[] } = await request(
+    "http://localhost:4000/graphql",
+    query
+  );
 
-    // Use gray-matter to parse the post metadata section
-    const matterResult = matter(fileContents);
-
-    // Combine the data with the id
-    return {
-      id,
-      ...matterResult.data,
-    };
-  });
-  // Sort posts by date
-  return allPostsData.sort((a: any, b: any) => {
+  return data.posts.sort((a: any, b: any) => {
     if (a.date < b.date) {
       return 1;
     } else {
@@ -35,48 +30,41 @@ export function getSortedPostsData() {
     }
   });
 }
-export function getAllPostIds() {
-  const fileNames = fs.readdirSync(postsDirectory);
 
-  // Returns an array that looks like this:
-  // [
-  //   {
-  //     params: {
-  //       id: 'ssg-ssr'
-  //     }
-  //   },
-  //   {
-  //     params: {
-  //       id: 'pre-rendering'
-  //     }
-  //   }
-  // ]
-  return fileNames.map((fileName) => {
+export async function getAllPostIds() {
+  const data: { posts: { id: string }[] } = await request(
+    "http://localhost:4000/graphql",
+    `{
+       posts {
+         id
+       }
+     }
+    `
+  );
+
+  return data.posts.map((post) => {
     return {
       params: {
-        id: fileName.replace(/\.md$/, ""),
+        id: post.id,
       },
     };
   });
 }
 
-export async function getPostData(id) {
-  const fullPath = path.join(postsDirectory, `${id}.md`);
-  const fileContents = fs.readFileSync(fullPath, "utf8");
+export async function getPostData(id): Promise<Post> {
+  const operation = `{
+    post(id: "${id}") {
+      id
+      title
+      date
+      content
+    }
+  }`;
 
-  // Use gray-matter to parse the post metadata section
-  const matterResult = matter(fileContents);
+  const data: { post: Post } = await request(
+    "http://localhost:4000/graphql",
+    operation
+  );
 
-  // Use remark to convert markdown into HTML string
-  const processedContent = await remark()
-    .use(html)
-    .process(matterResult.content);
-  const contentHtml = processedContent.toString();
-
-  // Combine the data with the id and contentHtml
-  return {
-    id,
-    contentHtml,
-    ...matterResult.data,
-  };
+  return data.post;
 }
