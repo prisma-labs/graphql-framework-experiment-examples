@@ -9,17 +9,17 @@ export type Post = {
   title: string;
 };
 
-const postsDirectory = path.join(process.cwd(), "posts");
+const postsDir = path.join(__dirname, "data", "posts");
 
 export function getSortedPostsData(): Post[] {
   // Get file names under /posts
-  const fileNames = fs.readdirSync(postsDirectory);
+  const fileNames = fs.readdirSync(postsDir);
   const allPostsData = fileNames.map((fileName) => {
     // Remove ".md" from file name to get id
     const id = fileName.replace(/\.md$/, "");
 
     // Read markdown file as string
-    const fullPath = path.join(postsDirectory, fileName);
+    const fullPath = path.join(postsDir, fileName);
     const fileContents = fs.readFileSync(fullPath, "utf8");
 
     // Use gray-matter to parse the post metadata section
