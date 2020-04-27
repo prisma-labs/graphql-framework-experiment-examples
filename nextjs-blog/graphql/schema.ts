@@ -7,7 +7,7 @@ import { getSortedPostsData as getSortedPosts } from "../db/post";
 
 server.express.use(cors());
 server.express.use(bodyParser.json());
-server.express.use((req, res, next) => {
+server.express.use((req, _res, next) => {
   if (req.body.operationName === "IntrospectionQuery") {
     log.trace("request", {
       path: req.path,

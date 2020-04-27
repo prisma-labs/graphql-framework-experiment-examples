@@ -3,8 +3,8 @@ import Link from "next/link";
 import utilStyles from "../styles/utils.module.css";
 import styles from "./layout.module.css";
 
-const name = "Your Name";
-export const siteTitle = "Next.js Sample Website";
+const name = "Newton";
+export const siteTitle = "Next.js × Nexus";
 
 export default function Layout(input: { children: any; home?: boolean }) {
   const children = input.children;
@@ -30,7 +30,7 @@ export default function Layout(input: { children: any; home?: boolean }) {
         {home ? (
           <>
             <img
-              src="/images/profile.jpg"
+              src="https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTY2MzU3Njc4ODI0NjI5OTM0/isaac_newton_1689_painting_sir_godfrey_kneller_public_domain_via_wikimedia_commons.jpg"
               className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
               alt={name}
             />
@@ -41,7 +41,7 @@ export default function Layout(input: { children: any; home?: boolean }) {
             <Link href="/">
               <a>
                 <img
-                  src="/images/profile.jpg"
+                  src="https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTY2MzU3Njc4ODI0NjI5OTM0/isaac_newton_1689_painting_sir_godfrey_kneller_public_domain_via_wikimedia_commons.jpg"
                   className={`${styles.headerImage} ${utilStyles.borderCircle}`}
                   alt={name}
                 />
