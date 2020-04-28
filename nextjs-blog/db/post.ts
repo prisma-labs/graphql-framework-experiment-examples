@@ -11,7 +11,7 @@ export type Post = {
 
 const postsDir = path.join(__dirname, "data", "posts");
 
-export function getSortedPostsData(): Post[] {
+export function getSortedPosts(): Post[] {
   // Get file names under /posts
   const fileNames = fs.readdirSync(postsDir);
   const allPostsData = fileNames.map((fileName) => {

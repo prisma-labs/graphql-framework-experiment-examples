@@ -3,7 +3,7 @@ import cors from "cors";
 import { log, schema, server } from "nexus";
 import remark from "remark";
 import html from "remark-html";
-import { getSortedPostsData as getSortedPosts } from "../db/post";
+import { getSortedPosts } from "../db/post";
 
 server.express.use(cors());
 server.express.use(bodyParser.json());
