@@ -1,8 +1,6 @@
 import bodyParser from "body-parser";
 import cors from "cors";
 import { log, schema, server } from "nexus";
-import remark from "remark";
-import html from "remark-html";
 import { getSortedPosts } from "../db/post";
 
 server.express.use(cors());
@@ -28,14 +26,7 @@ schema.objectType({
     t.id("id");
     t.string("title");
     t.string("date");
-    t.string("content", {
-      resolve(parent) {
-        return remark()
-          .use(html)
-          .process(parent.content)
-          .then((html) => html.toString());
-      },
-    });
+    t.string("content");
   },
 });
 
@@ -47,7 +38,9 @@ schema.queryType({
         id: schema.idArg({ required: true }),
       },
       resolve(_, args) {
-        return getSortedPosts().find((p) => p.id === args.id);
+        return getSortedPosts().then((posts) =>
+          posts.find((p) => p.id === args.id)
+        );
       },
     });
 
