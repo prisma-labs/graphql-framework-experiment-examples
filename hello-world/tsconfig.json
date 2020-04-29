@@ -1,10 +1,7 @@
 {
   "compilerOptions": {
     "strict": true,
-    "target": "esnext",
     "esModuleInterop": true,
-    "module": "esnext",
-    "moduleResolution": "node",
     "rootDir": "api"
   },
   "include": ["api"]
