@@ -3,11 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "client:dev": "next dev",
-    "client:build": "next build",
-    "client:start": "next start",
-    "server:dev": "nexus dev",
-    "server:build": "nexus build"
+    "nexus:dev": "nexus dev",
+    "nexus:build": "nexus build",
+    "build": "next build",
+    "dev": "next dev",
+    "start": "next start"
   },
   "dependencies": {
     "axios": "^0.19.2",
