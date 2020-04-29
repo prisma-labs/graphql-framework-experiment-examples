@@ -7,7 +7,7 @@ export const Query = schema.queryType({
       type: 'User',
       nullable: true,
       resolve: (parent, args, ctx) => {
-        const userId = getUserId(ctx)
+        const userId = getUserId(ctx.token)
         if (!userId) {
           throw new Error('Invalid userId')
         }

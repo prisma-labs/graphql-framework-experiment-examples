@@ -61,7 +61,7 @@ export const Mutation = schema.mutationType({
         content: schema.stringArg(),
       },
       resolve: (parent, { title, content }, ctx) => {
-        const userId = getUserId(ctx)
+        const userId = getUserId(ctx.token)
         if (!userId) {
           throw new Error('Invalid userId')
         }
