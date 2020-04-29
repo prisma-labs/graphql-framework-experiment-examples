@@ -10,7 +10,7 @@ if (!(app as any).__state.isWasServerStartCalled) {
   app.server.start();
 }
 
-export default async (req: NextApiRequest, res: NextApiResponse) => {
+export default async (_req: NextApiRequest, res: NextApiResponse) => {
   const innerRes = await Axios.request({
     method: "get",
     url: "http://localhost:4000",
