@@ -1,5 +1,4 @@
 process.env.NEXUS_SHOULD_GENERATE_ARTIFACTS = "false";
-process.env.NEXUS_DEV = "false";
 
 import Axios from "axios";
 import { NextApiRequest, NextApiResponse } from "next";
