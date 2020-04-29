@@ -4,4 +4,4 @@ The Nexus additions just show how to integrate Nexus into your app. It does not 
 
 This example is incomplete. It depends upon the resolution of https://github.com/graphql-nexus/nexus/issues/648. Its current limitations are:
 
-1. Dev modes are not integrated. You need to run `npx next dev` and `PORT=4001 npx nexus dev` in their own separate terminals. The latter is simply used to run reflection. The Nexus server is actually run by Nextjs.
+1. Dev modes are not integrated. You need to run `npx next dev` and `npm run nexus:reflection` in their own separate terminals. The latter is simply used to run reflection. The Nexus server is actually run by Nextjs.
