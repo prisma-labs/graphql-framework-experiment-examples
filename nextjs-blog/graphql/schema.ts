@@ -1,7 +1,19 @@
 import bodyParser from "body-parser";
 import cors from "cors";
 import { log, schema, server } from "nexus";
-import { getSortedPosts } from "../db/post";
+import { Post } from "../db/post";
+
+function getSortedPosts(): Post[] {
+  return [
+    {
+      content:
+        "Me: Dear World, Teach me how APIs access private static files in NextJS.\n\nWorld: Read this young one: https://github.com/zeit/next.js/issues/8251.",
+      date: "2020-01-13",
+      id: "1",
+      title: "Hello world",
+    },
+  ];
+}
 
 server.express.use(cors());
 server.express.use(bodyParser.json());
