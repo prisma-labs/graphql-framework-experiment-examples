@@ -5,7 +5,7 @@ main()
 
 async function main() {
   const db = new PrismaClient()
-  const result = await db.users.create({
+  const result = await db.user.create({
     data: {
       name: name.firstName(),
       rating: 0.5,

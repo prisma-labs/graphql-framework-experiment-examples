@@ -1,7 +1,8 @@
 {
   "compilerOptions": {
     "skipLibCheck": true,
-    "strict": true
-    // "plugins": [{ "name": "../../../../nexus-typescript-service" }]
-  }
+    "strict": true,
+    "rootDir": "api"
+  },
+  "include": ["api"]
 }

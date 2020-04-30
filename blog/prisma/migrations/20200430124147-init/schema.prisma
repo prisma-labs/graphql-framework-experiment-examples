@@ -1,6 +1,6 @@
 datasource db {
   provider = "postgresql"
-  url      = "postgresql://postgres:postgres@localhost:5432/myapp"
+  url = "***"
 }
 
 generator prisma_client_js {
