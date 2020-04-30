@@ -2397,7 +2397,7 @@ jest-environment-jsdom@^25.4.0:
     jest-util "^25.4.0"
     jsdom "^15.2.1"
 
-jest-environment-node@^25.4.0:
+jest-environment-node@25.4.0, jest-environment-node@^25.4.0:
   version "25.4.0"
   resolved "https://registry.yarnpkg.com/jest-environment-node/-/jest-environment-node-25.4.0.tgz#188aef01ae6418e001c03fdd1c299961e1439082"
   integrity sha512-wryZ18vsxEAKFH7Z74zi/y/SyI1j6UkVZ6QsllBuT/bWlahNfQjLNwFsgh/5u7O957dYFoXj4yfma4n4X6kU9A==
@@ -3017,7 +3017,7 @@ negotiator@0.6.2:
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.2.tgz#feacf7ccf525a77ae9634436a64883ffeca346fb"
   integrity sha512-hZXc7K2e+PgeI1eDBe/10Ard4ekbfrrqG8Ep+8Jmf4JID2bNg7NvCPOZN+kfF574pFQI7mum2AUqDidoKqcTOw==
 
-nexus@^0.20.0-next.47:
+nexus@0.20.0-next.47:
   version "0.20.0-next.47"
   resolved "https://registry.yarnpkg.com/nexus/-/nexus-0.20.0-next.47.tgz#bd5e8eab8d4ad4418f8358ea602054b72725d8a5"
   integrity sha512-88LYxE6ojhXtSoANG7mNd7YUZieWhEFvSUZG4pyp389d9uoT/ZnstYMrFj+/vXTtwlgsfiHJqhm0LLu/Aq2gQA==

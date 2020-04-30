@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "license": "MIT",
   "dependencies": {
-    "nexus": "^0.20.0-next.47"
+    "nexus": "0.20.0-next.47"
   },
   "devDependencies": {
     "@types/jest": "25.2.1",
     "jest": "25.4.0",
-    "jest-environment-node": "^25.4.0",
+    "jest-environment-node": "25.4.0",
     "prettier": "2.0.4",
     "ts-jest": "25.4.0"
   },
