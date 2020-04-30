@@ -407,6 +407,16 @@
     call-me-maybe "^1.0.1"
     glob-to-regexp "^0.3.0"
 
+"@nexus/logger@^0.1.0-next.1":
+  version "0.1.0-next.1"
+  resolved "https://registry.yarnpkg.com/@nexus/logger/-/logger-0.1.0-next.1.tgz#34a80cfd5f3c0e192ad147bc9ba793b33780846b"
+  integrity sha512-J80f3tRdaSvYjicRrp/Q7e6MbV4zxB8mxprd/mijEFCMdQ7t6Y8wWiW4jwEnH8ozy99tWcXTYVKGhnLXNdXV6Q==
+  dependencies:
+    chalk "^4.0.0"
+    lodash "^4.17.15"
+    pino "5"
+    strip-ansi "^6.0.0"
+
 "@nexus/schema@^0.14.0-next.1":
   version "0.14.0-next.1"
   resolved "https://registry.yarnpkg.com/@nexus/schema/-/schema-0.14.0-next.1.tgz#ea822ce28fe914ff5167962d786bb803ee1e37e6"
@@ -3791,11 +3801,12 @@ nexus-prisma@^0.12.0:
     fs-extra "^8.1.0"
     pluralize "^8.0.0"
 
-nexus@^0.20.0:
-  version "0.20.0"
-  resolved "https://registry.yarnpkg.com/nexus/-/nexus-0.20.0.tgz#9ddd4e85333362001e7a0645e043e4263154a9be"
-  integrity sha512-SnhPUa0o5nZ9Wj9CvOG1jSUpjhzvRVi3p6Lk/hm5idibsG9gBQxOV9LrVtiAaJEEFUOZ4YdYfRTbfSFAfuvAdw==
+nexus@^0.21.0-next.18:
+  version "0.21.0-next.18"
+  resolved "https://registry.yarnpkg.com/nexus/-/nexus-0.21.0-next.18.tgz#008f24bc917f18dd8dc8011ac26b85e55828e94a"
+  integrity sha512-UBPTrN0YNNN3XO+BWWWIXbZ7QYFISVYIH+l6+w08uvs74Me1I1RfQpT4W6z170Wkux2w3iKYJHsSXqpwBTkYZg==
   dependencies:
+    "@nexus/logger" "^0.1.0-next.1"
     "@nexus/schema" "^0.14.0-next.1"
     "@types/express" "^4.17.2"
     "@types/node-fetch" "^2.5.5"
@@ -3816,12 +3827,13 @@ nexus@^0.20.0:
     lodash "^4.17.15"
     node-fetch "^2.6.0"
     pino "^5.15.0"
+    pirates "^4.0.1"
     prompts "^2.3.0"
     rxjs "^6.5.4"
     simple-git "^1.126.0"
     strip-ansi "^6.0.0"
     ts-morph "^7.0.0"
-    ts-node "^8.5.0"
+    ts-node "^8.9.0"
     tslib "^1"
     type-fest "^0.13.0"
     typescript "^3.7.2"
@@ -4124,7 +4136,7 @@ pino-std-serializers@^2.4.2:
   resolved "https://registry.yarnpkg.com/pino-std-serializers/-/pino-std-serializers-2.4.2.tgz#cb5e3e58c358b26f88969d7e619ae54bdfcc1ae1"
   integrity sha512-WaL504dO8eGs+vrK+j4BuQQq6GLKeCCcHaMB2ItygzVURcL1CycwNEUHTD/lHFHs/NL5qAz2UKrjYWXKSf4aMQ==
 
-pino@^5.15.0:
+pino@5, pino@^5.15.0:
   version "5.17.0"
   resolved "https://registry.yarnpkg.com/pino/-/pino-5.17.0.tgz#b9def314e82402154f89a25d76a31f20ca84b4c8"
   integrity sha512-LqrqmRcJz8etUjyV0ddqB6OTUutCgQULPFg2b4dtijRHUsucaAdBgSUW58vY6RFSX+NT8963F+q0tM6lNwGShA==
@@ -5198,7 +5210,7 @@ ts-morph@^7.0.0:
     "@ts-morph/common" "~0.4.0"
     code-block-writer "^10.1.0"
 
-ts-node@^8.5.0:
+ts-node@^8.9.0:
   version "8.9.1"
   resolved "https://registry.yarnpkg.com/ts-node/-/ts-node-8.9.1.tgz#2f857f46c47e91dcd28a14e052482eb14cfd65a5"
   integrity sha512-yrq6ODsxEFTLz0R3BX2myf0WBCSQh9A+py8PBo1dCzWIOcvisbyH6akNKqDHMgXePF2kir5mm5JXJTH3OUJYOQ==
