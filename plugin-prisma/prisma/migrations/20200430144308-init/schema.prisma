@@ -1,6 +1,6 @@
 datasource db {
-  provider = "sqlite"
-  url      = "file:dev.db"
+  provider = "postgresql"
+  url = "***"
 }
 
 generator prisma_client_js {
@@ -8,7 +8,7 @@ generator prisma_client_js {
 }
 
 model Blog {
-  id        Int      @id @default(autoincrement())
+  id        Int      @default(autoincrement()) @id
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
   name      String
@@ -18,12 +18,13 @@ model Blog {
 }
 
 model User {
-  id        Int      @id @default(autoincrement())
+  id        Int      @default(autoincrement()) @id
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
   name      String?
   posts     Post[]
-  blog      Blog?
+  blogId    Int?
+  blog      Blog?    @relation(fields: [blogId], references: [id])
   rating    Float
   role      UserRole
 }
@@ -34,17 +35,20 @@ enum UserRole {
 }
 
 model Post {
-  id     Int        @id @default(autoincrement())
+  id     Int        @default(autoincrement()) @id
   title  String
-  tags   Tag[]
-  blog   Blog
+  tags   Tag[]      @relation(references: [id])
+  blogId Int?
+  blog   Blog?      @relation(fields: [blogId], references: [id])
   status PostStatus
+  User   User?      @relation(fields: [userId], references: [id])
+  userId Int?
 }
 
 model Tag {
-  id    Int    @id @default(autoincrement())
+  id    Int    @default(autoincrement()) @id
   label String
-  posts Post[]
+  posts Post[] @relation(references: [id])
 }
 
 enum PostStatus {

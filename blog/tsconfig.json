@@ -1,7 +1,0 @@
-{
-  "compilerOptions": {
-    "skipLibCheck": true,
-    "strict": true
-    // "plugins": [{ "name": "../../../../nexus-typescript-service" }]
-  }
-}
