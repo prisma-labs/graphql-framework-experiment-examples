@@ -3,8 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "nexus:reflection": "nexus dev --entrypoint pages/api/graphql.ts",
-    "build": "next build",
+    "nexus:reflection": "nexus dev --reflection --entrypoint pages/api/graphql.ts",
+    "nexus:check": "nexus build",
+    "test": "next build",
     "dev": "next dev",
     "start": "next start"
   },
@@ -16,7 +17,7 @@
     "graphql-request": "1.8.2",
     "gray-matter": "4.0.2",
     "next": "9.3.5",
-    "nexus": "0.0.0-pr.788.2.3d4e6cd",
+    "nexus": "0.0.0-pr.788.3.8dd7202",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "remark": "12.0.0",

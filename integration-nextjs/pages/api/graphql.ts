@@ -1,10 +1,6 @@
 import app, { schema, server } from "nexus";
 import { getSortedPosts } from "../../db/posts.mock";
 
-const handler = server.handlers.graphql;
-
-export default handler;
-
 //-- schema
 
 schema.objectType({
@@ -44,3 +40,5 @@ schema.queryType({
 //-- boilerplate
 
 app.assemble();
+
+export default server.handlers.graphql;
