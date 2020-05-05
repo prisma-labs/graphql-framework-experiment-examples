@@ -1,7 +1,7 @@
-This combines what one builds in https://nextjs.org/learn with https://nexusjs.org.
+This example shows how to add a Nexus api endpoint to a nextjs project. The nextjs project herein is based upon what one builds in https://nextjs.org/learn.
 
-The Nexus additions just show how to integrate Nexus into your app. It does not serve any practical purpose. You can use the API to query posts.
+Some things to keep in mind:
 
-This example is incomplete. It depends upon the resolution of https://github.com/graphql-nexus/nexus/issues/648. Its current limitations are:
-
-1. Dev modes are not integrated. You need to run `npx next dev` and `npm run nexus:reflection` in their own separate terminals. The latter is simply used to run reflection. The Nexus server is actually run by Nextjs.
+1. While developing, run `npm run nexus:reflection` in a separate terminal (to `npm run dev`) to benefit from the type safety that Nexus gives you.
+2. Unlike a normal Nexus project, you must make sure to import all your graphql modules into your graphql api entrypoint.
+3. The version of Nexus being used is a PR release. This is bleeding edge unstable stuff!

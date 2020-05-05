@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "nexus:reflection": "PORT=4001 nexus dev",
+    "nexus:reflection": "nexus dev --entrypoint pages/api/graphql.ts",
     "build": "next build",
     "dev": "next dev",
     "start": "next start"
@@ -16,7 +16,7 @@
     "graphql-request": "1.8.2",
     "gray-matter": "4.0.2",
     "next": "9.3.5",
-    "nexus": "0.21.0-next.14",
+    "nexus": "0.0.0-pr.788.2.3d4e6cd",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "remark": "12.0.0",

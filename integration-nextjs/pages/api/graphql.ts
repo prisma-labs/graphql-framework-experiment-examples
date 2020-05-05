@@ -1,24 +1,46 @@
-process.env.NEXUS_SHOULD_GENERATE_ARTIFACTS = "false";
+import app, { schema, server } from "nexus";
+import { getSortedPosts } from "../../db/posts.mock";
 
-import Axios from "axios";
-import { NextApiRequest, NextApiResponse } from "next";
-import app from "nexus";
+const handler = server.handlers.graphql;
 
-if (!(app as any).__state.isWasServerStartCalled) {
-  require("../../graphql/schema");
-  app.settings.change({ server: { port: 4000, playground: true } });
-  app.server.start();
-}
+export default handler;
 
-export default async (req: NextApiRequest, res: NextApiResponse) => {
-  const innerRes = await Axios.request({
-    method: "post",
-    url: "http://localhost:4000/graphql",
-    headers: req.headers,
-    data: req.body,
-  });
+//-- schema
 
-  res
-    .writeHead(innerRes.status, innerRes.headers)
-    .end(JSON.stringify(innerRes.data));
-};
+schema.objectType({
+  name: "Post",
+  rootTyping: "Post",
+  definition(t) {
+    t.id("id");
+    t.string("title");
+    t.string("date");
+    t.string("content");
+  },
+});
+
+schema.queryType({
+  definition(t) {
+    t.field("post", {
+      type: "Post",
+      args: {
+        id: schema.idArg({ required: true }),
+      },
+      resolve(_, args) {
+        return getSortedPosts().then((posts) =>
+          posts.find((p) => p.id === args.id)
+        );
+      },
+    });
+
+    t.list.field("posts", {
+      type: "Post",
+      resolve() {
+        return getSortedPosts();
+      },
+    });
+  },
+});
+
+//-- boilerplate
+
+app.assemble();
