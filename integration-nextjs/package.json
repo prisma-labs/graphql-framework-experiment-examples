@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "nexus:reflection": "nexus dev --reflection --entrypoint pages/api/graphql.ts",
-    "nexus:check": "nexus build",
+    "nexus:check": "nexus build --entrypoint pages/api/graphql.ts && nexus build --entrypoint pages/api/playground.ts",
     "test": "next build",
     "dev": "next dev",
     "start": "next start",
