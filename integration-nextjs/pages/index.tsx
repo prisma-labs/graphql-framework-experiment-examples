@@ -7,7 +7,10 @@ export default function Home() {
       <Head>
         <title>Next.js × Nexus Todo App</title>
       </Head>
-      <p>todo</p>
+      <p>
+        The Todo App will be here one day. For now just go open the{' '}
+        <a href="/api/playground">Nexus Playground</a>.
+      </p>
     </Layout>
   )
 }

@@ -1,4 +1,4 @@
-This example shows how to add a Nexus api endpoint to a nextjs project. Some things to keep in mind:
+This example shows how to add a Nexus api endpoint to a nextjs project. You can try out the deployed version right now [here](https://nextjs-blog-one-lyart.now.sh). Some things to keep in mind:
 
 1. While developing, run `npm run nexus:reflection` in a separate terminal (to `npm run dev`) to benefit from the type safety that Nexus gives you.
 1. With `compilerOptions.noEmit` set to `true` in tsconfig, treat `nexus build` as a check step to run in your tests.
