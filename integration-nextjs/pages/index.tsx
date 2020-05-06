@@ -1,50 +1,13 @@
-import { GetStaticProps } from "next";
-import Head from "next/head";
-import Link from "next/link";
-import Date from "../components/date";
-import Layout, { siteTitle } from "../components/layout";
-import { getSortedPosts } from "../db/post";
-import utilStyles from "../styles/utils.module.css";
+import Head from 'next/head'
+import Layout from '../components/layout'
 
-export default function Home({ posts }) {
+export default function Home() {
   return (
-    <Layout home>
+    <Layout>
       <Head>
-        <title>{siteTitle}</title>
+        <title>Next.js × Nexus Todo App</title>
       </Head>
-      <section className={utilStyles.headingMd}>
-        <p>Recent Musings</p>
-        <p>
-          (This is a sample website. It combines what one builds in{" "}
-          <a href="https://nextjs.org/learn">the Next.js tutorial</a> with{" "}
-          <a href="https://nexusjs.org">Nexus</a>.)
-        </p>
-      </section>
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
-        <ul className={utilStyles.list}>
-          {posts.map(({ id, date, title }) => (
-            <li className={utilStyles.listItem} key={id}>
-              <Link href="/posts/[id]" as={`/posts/${id}`}>
-                <a>{title}</a>
-              </Link>
-              <br />
-              <small className={utilStyles.lightText}>
-                <Date dateString={date} />
-              </small>
-            </li>
-          ))}
-        </ul>
-      </section>
+      <p>todo</p>
     </Layout>
-  );
+  )
 }
-
-export const getStaticProps: GetStaticProps = async () => {
-  const posts = await getSortedPosts();
-  return {
-    props: {
-      posts,
-    },
-  };
-};

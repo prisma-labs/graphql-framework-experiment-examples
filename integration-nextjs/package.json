@@ -1,5 +1,5 @@
 {
-  "name": "learn-starter",
+  "name": "next-nexus-todo",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -7,26 +7,23 @@
     "nexus:check": "nexus build",
     "test": "next build",
     "dev": "next dev",
-    "start": "next start"
+    "start": "next start",
+    "build": "next build",
+    "deploy:preview": "now",
+    "deploy:prod": "now --prod"
   },
   "dependencies": {
-    "axios": "0.19.2",
-    "body-parser": "1.19.0",
-    "cors": "2.8.5",
-    "date-fns": "2.12.0",
-    "graphql-request": "1.8.2",
-    "gray-matter": "4.0.2",
     "next": "9.3.5",
-    "nexus": "0.0.0-pr.788.3.8dd7202",
+    "nexus": "^0.21.0-next.30",
     "react": "16.13.1",
-    "react-dom": "16.13.1",
-    "remark": "12.0.0",
-    "remark-html": "11.0.1"
+    "react-dom": "16.13.1"
   },
   "devDependencies": {
-    "@babel/plugin-proposal-export-default-from": "7.8.3",
+    "@prisma-labs/prettier-config": "^0.1.0",
     "@types/node": "13.13.2",
     "@types/react": "16.9.34",
+    "prettier": "^2.0.5",
     "typescript": "3.8.3"
-  }
+  },
+  "prettier": "@prisma-labs/prettier-config"
 }
