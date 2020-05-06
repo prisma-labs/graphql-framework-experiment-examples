@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "next": "9.3.5",
-    "nexus": "^0.21.0-next.30",
+    "nexus": "^0.21.0-next.31",
     "react": "16.13.1",
     "react-dom": "16.13.1"
   },
