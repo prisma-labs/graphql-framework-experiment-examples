@@ -1,6 +1,6 @@
-This example shows how to add a Nexus api endpoint to a nextjs project. You can try out the deployed version right now [here](https://nextjs-blog-one-lyart.now.sh). Some things to keep in mind:
+This example shows how to add a Nexus api endpoint to a nextjs project. You can try out the deployed version right now [here](https://integration-nextjs-with-plugin-prisma.now.s).
 
-#### Getting Started
+#### Setting up for development
 
 1. Start a postgres database
 
