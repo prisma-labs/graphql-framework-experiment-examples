@@ -23,7 +23,7 @@ plugin-prisma
 If it shows off multiple plugins together in concert then call it:
 
 ```
-plugins-<plugin name>-and-<plugin name>[-and-<plugin name>]\*
+plugins-<plugin name>-[and-<plugin name>]+
 ```
 
 Example:
@@ -37,11 +37,47 @@ plugins-prisma-and-jwt-auth
 If it shows off integration with another tool then call it:
 
 ```
-integration-<tool name>
+with-<tool name>
 ```
 
 Example:
 
 ```
-integration-nextjs
+with-nextjs
+```
+
+### Tool Integration Combination Example
+
+If it shows off multiple tools together in concert then call it:
+
+```
+with-<tool name>-[and-<tool name>]+
+```
+
+Example:
+
+```
+with-nextjs-and-vercel
+```
+
+### Tool & Plugin Example
+
+If the example shows integration with tools and plugins then call it:
+
+```
+with-<tool name>-[and-<tool name>]+-and-plugins-<plugin name>-[and-<plugin name>]+
+```
+
+Example:
+
+```
+with-nextjs-and-plugins-prisma
+```
+
+```
+with-nextjs-and-vercel-and-plugins-prisma
+```
+
+```
+with-nextjs-and-vercel-and-plugins-prisma-and-jwt-auth
 ```
