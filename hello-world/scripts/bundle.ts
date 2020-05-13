@@ -20,15 +20,34 @@ function isEvalWarnFromThirdPartyDep(warning: RollupWarning): boolean {
   return false
 }
 
+function isNotExportedWarnFromImportOfThirdPartyDep(
+  warning: RollupWarning
+): boolean {
+  if (process.env.DEBUG) return false
+  if (
+    warning.code === "MISSING_EXPORT" &&
+    warning.exporter?.match(/node_modules/)
+  )
+    return true
+  return false
+}
+
 rollup({
   onwarn(warning, warn) {
     if (isCircDepWarnFromThirdPartyDep(warning)) return
     if (isEvalWarnFromThirdPartyDep(warning)) return
+    if (isNotExportedWarnFromImportOfThirdPartyDep(warning)) return
     // console.log(warning)
     warn(warning)
   },
   input: path.join(process.cwd(), "node_modules", ".build", "index.js"),
-  treeshake: true,
+  treeshake: {
+    moduleSideEffects(id, external) {
+      // console.log(id, external)
+      if (id.match("node_modules/typescript")) return false
+      return true
+    },
+  },
   external: [...builtins],
   plugins: [
     visualizer() as any,
