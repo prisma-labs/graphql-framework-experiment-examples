@@ -37,13 +37,11 @@ rollup({
     if (isCircDepWarnFromThirdPartyDep(warning)) return
     if (isEvalWarnFromThirdPartyDep(warning)) return
     if (isNotExportedWarnFromImportOfThirdPartyDep(warning)) return
-    // console.log(warning)
     warn(warning)
   },
   input: path.join(process.cwd(), "node_modules", ".build", "index.js"),
   treeshake: {
     moduleSideEffects(id, external) {
-      // console.log(id, external)
       if (id.match("node_modules/typescript")) return false
       return true
     },
@@ -56,7 +54,6 @@ rollup({
     commonjs({
       namedExports: {
         "nexus/node_modules/lodash/lodash.js": ["cloneDeep"],
-        // "nexus/dist/index.js": ["schema", "settings"],
       },
       ignore: ["@microsoft/typescript-etw", "prettier"],
     }),
@@ -67,7 +64,6 @@ rollup({
     return rolledup.write({
       file: path.join(process.cwd(), "dist-bundle", "bundle.js"),
       format: "commonjs",
-      // dir: path.join(program.getCompilerOptions().outDir!, ".."),
     })
   })
   .then((rolledout) => {
