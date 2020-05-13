@@ -32,7 +32,7 @@
     "dev": "nexus dev",
     "test": "jest",
     "doctor": "nexus doctor",
-    "bundle": "ts-node --dir scripts bundle && du -h dist-bundle",
+    "bundle": "ts-node --dir scripts rollup && du -h dist-bundle",
     "bundle:ncc": "ncc build node_modules/.build/index.js --stats-out dist-ncc/stats.json --out dist-ncc/bundle && du -h dist-ncc/bundle",
     "bundle:ncc2": "node scripts/ncc && du -h dist-ncc/bundle.js",
     "link:nexus": "yarn -s link nexus && chmod +x node_modules/.bin/nexus"
