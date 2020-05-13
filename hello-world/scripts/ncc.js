@@ -6,7 +6,7 @@ async function main() {
   const { code, map, assets } = await ncc(
     join(process.cwd(), "node_modules/.build/index.js"),
     {
-      externals: ["typescript"],
+      externals: ["typescript", "prettier"],
     }
   )
   await fs.writeAsync("dist-ncc/bundle.js", code)
