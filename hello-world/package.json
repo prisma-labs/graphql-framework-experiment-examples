@@ -6,6 +6,7 @@
     "@rollup/plugin-commonjs": "^11.1.0",
     "@rollup/plugin-json": "^4.0.3",
     "@rollup/plugin-node-resolve": "^7.1.3",
+    "@types/": "zeit/ncc",
     "@types/joi": "^14.3.4",
     "@types/rollup-plugin-visualizer": "^2.6.0",
     "@zeit/ncc": "^0.22.1",
@@ -33,6 +34,7 @@
     "doctor": "nexus doctor",
     "bundle": "ts-node --dir scripts bundle && du -h dist-bundle",
     "bundle:ncc": "ncc build node_modules/.build/index.js --stats-out dist-ncc/stats.json --out dist-ncc/bundle && du -h dist-ncc/bundle",
+    "bundle:ncc2": "node scripts/ncc && du -h dist-ncc/bundle.js",
     "link:nexus": "yarn -s link nexus && chmod +x node_modules/.bin/nexus"
   },
   "prettier": {

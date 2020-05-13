@@ -1,10 +1,9 @@
 import { empty } from "joi"
-import { settings, use } from "nexus"
-import { prisma } from "nexus-plugin-prisma"
+import { settings } from "nexus"
 
 console.log(empty)
 
-use(prisma())
+// use(prisma())
 
 // schema.addToContext((req) => {
 //   return {
