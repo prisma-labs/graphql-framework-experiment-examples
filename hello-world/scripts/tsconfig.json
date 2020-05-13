@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "esModuleInterop": true,
+    "module": "CommonJS",
+    "rootDir": "api"
+  },
+  "include": ["api"]
+}

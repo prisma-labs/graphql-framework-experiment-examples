@@ -2,8 +2,8 @@
   "compilerOptions": {
     "strict": true,
     "esModuleInterop": true,
-    // "module": "ESNext",
-    // "moduleResolution": "node",
+    "module": "ESNext",
+    "moduleResolution": "node",
     "rootDir": "api"
   },
   "include": ["api"]
