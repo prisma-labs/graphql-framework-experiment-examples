@@ -19,7 +19,8 @@ schema.objectType({
           field: "users",
           type: "[User]",
         })
-        return [ctx.db.users.newton]
+        return []
+        // return [ctx.db.users.newton]
       },
     })
   },

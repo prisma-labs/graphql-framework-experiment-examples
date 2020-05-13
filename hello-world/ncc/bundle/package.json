@@ -1,0 +1,79 @@
+{
+  "name": "nexus-plugin-prisma",
+  "version": "0.8.0",
+  "license": "MIT",
+  "author": "Jason Kuhrt",
+  "main": "dist/index.js",
+  "module": "dist/mylib.esm.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "scripts",
+    "global-type.d.ts",
+    "client.d.ts",
+    "client.js"
+  ],
+  "scripts": {
+    "format": "prettier --write .",
+    "dev": "node scripts/build-module-facades && tsc --watch",
+    "build": "yarn clean && node scripts/update-hash.js && node scripts/build-module-facades && tsc",
+    "build:ci": "tsc",
+    "test": "jest",
+    "test:e2e:mysql": "yarn test test/e2e/mysql.test.ts --testTimeout=400000",
+    "test:e2e:postgres": "yarn test test/e2e/postgres.test.ts --testTimeout=400000",
+    "test:e2e:sqlite": "yarn test test/e2e/sqlite.test.ts --testTimeout=400000",
+    "test:setup:db": "docker-compose down && rm -rf .mysql-data && rm -rf .postgres-data && docker-compose up -d",
+    "clean": "rm -rf dist tsconfig.tsbuildinfo",
+    "release:stable": "dripip stable",
+    "release:preview": "dripip preview",
+    "release:pr": "dripip pr",
+    "prepack": "yarn -s build",
+    "postinstall": "node ./scripts/postinstall.js"
+  },
+  "dependencies": {
+    "@nexus/schema": "^0.14.0-next.1",
+    "@prisma/cli": "2.0.0-beta.4",
+    "@prisma/client": "2.0.0-beta.4",
+    "@prisma/sdk": "2.0.0-beta.4",
+    "chalk": "^3.0.0",
+    "common-tags": "^1.8.0",
+    "dotenv": "^8.2.0",
+    "fs-jetpack": "^2.2.3",
+    "graphql": "^14.6.0",
+    "nexus-prisma": "^0.13.0-next.2",
+    "prismjs": "^1.19.0",
+    "stacktrace-parser": "^0.1.9"
+  },
+  "devDependencies": {
+    "@babel/core": "7.8.7",
+    "@prisma-labs/prettier-config": "0.1.0",
+    "@types/common-tags": "1.8.0",
+    "@types/jest": "25.1.4",
+    "@types/prismjs": "1.16.0",
+    "dripip": "0.9.0",
+    "jest": "25.5.2",
+    "jest-watch-typeahead": "0.5.0",
+    "nexus": "^0.22.0-next.7",
+    "node-fetch": "2.6.0",
+    "node-pty": "0.9.0",
+    "prettier": "2.0.4",
+    "pretty-quick": "2.0.1",
+    "rxjs": "6.5.5",
+    "strip-ansi": "6.0.0",
+    "ts-jest": "25.2.1",
+    "tslib": "1.11.1",
+    "typescript": "3.8.3"
+  },
+  "prisma": {
+    "version": "afd294205618b1c825b013ba6f5a6ebe4aa4a514"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "watchPlugins": [
+      "jest-watch-typeahead/filename",
+      "jest-watch-typeahead/testname"
+    ]
+  },
+  "prettier": "@prisma-labs/prettier-config"
+}

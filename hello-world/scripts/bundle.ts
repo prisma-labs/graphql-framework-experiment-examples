@@ -50,7 +50,7 @@ rollup({
   plugins: [
     visualizer() as any,
     json(),
-    resolve(),
+    resolve({}),
     commonjs({
       namedExports: {
         "nexus/node_modules/lodash/lodash.js": ["cloneDeep"],

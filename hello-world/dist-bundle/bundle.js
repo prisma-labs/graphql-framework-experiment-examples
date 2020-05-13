@@ -27,6 +27,7 @@ var querystring = _interopDefault(require('querystring'));
 var url = _interopDefault(require('url'));
 var http = require('http');
 var http__default = _interopDefault(http);
+var nexusPluginPrisma = require('nexus-plugin-prisma');
 
 var name = "hello-world";
 var version = "1.0.0";
@@ -35,8 +36,11 @@ var dependencies = {
 	"@rollup/plugin-commonjs": "^11.1.0",
 	"@rollup/plugin-json": "^4.0.3",
 	"@rollup/plugin-node-resolve": "^7.1.3",
+	"@types/joi": "^14.3.4",
 	"@types/rollup-plugin-visualizer": "^2.6.0",
+	joi: "^14.3.1",
 	nexus: "^0.22.0-next.14",
+	"nexus-plugin-prisma": "^0.8.0",
 	rollup: "^2.8.2",
 	"rollup-plugin-visualizer": "^4.0.4",
 	"ts-node": "^8.10.1"
@@ -92644,20 +92648,21 @@ const server = app.server;
 const settings = app.settings;
 const use = app.use;
 
-schema$1.addToContext(function (req) {
-    return {
-        req: req,
-        db: {
-            users: {
-                newton: {
-                    id: "1",
-                    birthyear: "1649",
-                    name: "Newton"
-                }
-            }
-        }
-    };
-});
+use(nexusPluginPrisma.prisma());
+// schema.addToContext((req) => {
+//   return {
+//     req,
+//     db: {
+//       users: {
+//         newton: {
+//           id: "1",
+//           birthyear: "1649",
+//           name: "Newton",
+//         },
+//       },
+//     },
+//   }
+// })
 settings.change({
     schema: {
         generateGraphQLSDLFile: "api.graphql"
@@ -92684,7 +92689,8 @@ schema$1.objectType({
                     field: "users",
                     type: "[User]"
                 });
-                return [ctx.db.users.newton];
+                return [];
+                // return [ctx.db.users.newton]
             }
         });
     }
