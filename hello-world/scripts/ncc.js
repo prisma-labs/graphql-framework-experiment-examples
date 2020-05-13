@@ -1,6 +1,6 @@
 const { join } = require("path")
 const ncc = require("@zeit/ncc")
-const fs = require("fs")
+const fs = require("fs-jetpack")
 
 async function main() {
   const { code, map, assets } = await ncc(
@@ -9,7 +9,7 @@ async function main() {
       externals: ["typescript"],
     }
   )
-  fs.writeFileSync(join(process.cwd(), "dist-ncc/bundle.js"), code)
+  await fs.writeAsync("dist-ncc/bundle.js", code)
 }
 
 main().catch(console.error)

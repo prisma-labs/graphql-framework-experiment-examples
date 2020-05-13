@@ -10,6 +10,7 @@
     "@types/joi": "^14.3.4",
     "@types/rollup-plugin-visualizer": "^2.6.0",
     "@zeit/ncc": "^0.22.1",
+    "fs-jetpack": "^2.3.0",
     "joi": "^14.3.1",
     "nexus": "^0.22.0-next.14",
     "nexus-plugin-prisma": "^0.8.0",
@@ -33,8 +34,8 @@
     "test": "jest",
     "doctor": "nexus doctor",
     "bundle": "ts-node --dir scripts rollup && du -h dist-bundle",
-    "bundle:ncc": "ncc build node_modules/.build/index.js --stats-out dist-ncc/stats.json --out dist-ncc/bundle && du -h dist-ncc/bundle",
-    "bundle:ncc2": "node scripts/ncc && du -h dist-ncc/bundle.js",
+    "bundle:ncc:cli": "ncc build node_modules/.build/index.js --stats-out dist-ncc/stats.json --out dist-ncc/bundle && du -h dist-ncc/bundle",
+    "bundle:ncc": "node scripts/ncc && du -h dist-ncc/bundle.js",
     "link:nexus": "yarn -s link nexus && chmod +x node_modules/.bin/nexus"
   },
   "prettier": {

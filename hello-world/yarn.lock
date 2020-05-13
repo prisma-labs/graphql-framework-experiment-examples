@@ -2397,6 +2397,14 @@ fs-jetpack@^2.2.3:
     minimatch "^3.0.2"
     rimraf "^2.6.3"
 
+fs-jetpack@^2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/fs-jetpack/-/fs-jetpack-2.3.0.tgz#0220f6db733bedb0503fbb275133301130d89b81"
+  integrity sha512-oeyTdAM9oE9XOjdyM+cbU3ZX2b2Auj8HsRPyJg12piSXgRRSQdFoQXW5FjK/wOqhmO84VmIGsPFhdwQpYZbqFg==
+  dependencies:
+    minimatch "^3.0.2"
+    rimraf "^2.6.3"
+
 fs-minipass@^2.0.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/fs-minipass/-/fs-minipass-2.1.0.tgz#7f5036fdbf12c63c169190cbe4199c852271f9fb"

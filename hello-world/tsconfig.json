@@ -2,9 +2,10 @@
   "compilerOptions": {
     "strict": true,
     "esModuleInterop": true,
-    "module": "ESNext",
+    "module": "ES2015",
     "moduleResolution": "node",
     "rootDir": "api"
   },
-  "include": ["api"]
+  "include": ["api"],
+  "exclude": ["dist"]
 }
