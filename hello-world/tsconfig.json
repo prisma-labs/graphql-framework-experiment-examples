@@ -6,6 +6,5 @@
     "moduleResolution": "node",
     "rootDir": "api"
   },
-  "include": ["api"],
-  "exclude": ["dist"]
+  "include": ["api"]
 }

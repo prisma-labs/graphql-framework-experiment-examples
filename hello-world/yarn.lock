@@ -706,10 +706,6 @@
     multimatch "^4.0.0"
     typescript "~3.8.2"
 
-"@types/@zeit/ncc":
-  version "0.22.1"
-  resolved "https://codeload.github.com/zeit/ncc/tar.gz/a83ae0c4ceeff42bbc12f9d0c93d5f958271bc78"
-
 "@types/babel__core@^7.1.7":
   version "7.1.7"
   resolved "https://registry.yarnpkg.com/@types/babel__core/-/babel__core-7.1.7.tgz#1dacad8840364a57c98d0dd4855c6dd3752c6b89"
