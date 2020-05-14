@@ -64,6 +64,7 @@ rollup({
   .then((rolledup) => {
     console.log("rolled up")
     return rolledup.write({
+      exports: "named",
       // file: path.join(process.cwd(), "dist-bundle", "bundle.js"),
       dir: path.join(process.cwd(), "dist-rollup"),
       format: "commonjs",
