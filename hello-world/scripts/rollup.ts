@@ -46,14 +46,16 @@ rollup({
       return true
     },
   },
+
   external: [...builtins],
+  preserveModules: true,
   plugins: [
     visualizer() as any,
     json(),
     resolve({}),
     commonjs({
       namedExports: {
-        "nexus/node_modules/lodash/lodash.js": ["cloneDeep"],
+        "node_modules/lodash/lodash.js": ["cloneDeep"],
       },
       ignore: ["@microsoft/typescript-etw", "prettier"],
     }),
@@ -62,7 +64,8 @@ rollup({
   .then((rolledup) => {
     console.log("rolled up")
     return rolledup.write({
-      file: path.join(process.cwd(), "dist-bundle", "bundle.js"),
+      // file: path.join(process.cwd(), "dist-bundle", "bundle.js"),
+      dir: path.join(process.cwd(), "dist-rollup"),
       format: "commonjs",
     })
   })
