@@ -2,8 +2,10 @@
   "compilerOptions": {
     "strict": true,
     "esModuleInterop": true,
-    "module": "ES2015",
-    "moduleResolution": "node",
+    "target": "ES2018",
+    "module": "CommonJS",
+    // "module": "ES2015",
+    // "moduleResolution": "node",
     "rootDir": "api"
   },
   "include": ["api"]

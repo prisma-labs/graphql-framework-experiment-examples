@@ -9,6 +9,7 @@ async function main() {
       externals: ["typescript", "prettier"],
     }
   )
+  console.log(map, assets)
   await fs.writeAsync("dist-ncc/bundle.js", code)
 }
 
