@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "db:start": "docker run --detach --publish 5432:5432 -e POSTGRES_PASSWORD=postgres --name 'integration-nextjs-with-plugin-prisma' postgres:10.12",
-    "db:migrate": "yarn -s prisma migrate save --experimental && yarn -s prisma migrate up --experimental",
+    "db:migrate": "prisma migrate save --experimental && prisma migrate up --experimental",
     "nexus:reflection": "nexus dev --reflection --entrypoint pages/api/graphql.ts",
     "nexus:check": "nexus build --entrypoint pages/api/graphql.ts && nexus build --entrypoint pages/api/playground.ts",
     "test": "nexus build",

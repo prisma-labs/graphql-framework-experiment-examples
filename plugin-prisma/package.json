@@ -7,7 +7,7 @@
     "test": "jest",
     "clean": "rm -rf dist",
     "style": "prettier --write 'src/**/*'",
-    "build": "yarn -s clean && nexus build",
+    "build": "npm -s run clean && nexus build",
     "dev": "nexus dev",
     "data:seed": "ts-node prisma/seed.ts"
   },
