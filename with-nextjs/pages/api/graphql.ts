@@ -1,8 +1,5 @@
-// if (process.env.NODE_ENV === 'development') require('nexus').default.reset()
-
-const app = require('nexus').default
-
-require('../../graphql/schema')
+import app from 'nexus'
+import '../../graphql/schema'
 
 app.assemble()
 
