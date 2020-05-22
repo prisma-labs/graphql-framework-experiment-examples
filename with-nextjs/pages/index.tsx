@@ -8,9 +8,8 @@ export default function Home() {
         <title>Next.js × Nexus Todo App</title>
       </Head>
       <p>
-        The Todo App will be here one day. For now get{' '}
-        <a href="https://www.electronjs.org/apps/graphql-playground">GraphQL PLayground</a> and point it at
-        `/api/graphql`.
+        Get <a href="https://www.electronjs.org/apps/graphql-playground">GraphQL PLayground</a> and point it
+        at /api/graphql.
       </p>
     </Layout>
   )
