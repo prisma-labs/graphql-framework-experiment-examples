@@ -35,7 +35,6 @@
 /.nyc_output
 /dist
 /lib
-/package-lock.json
 /tmp
 bower_components
 build/Release

@@ -17,9 +17,7 @@
     "build": "nexus build",
     "generate": "nexus generate",
     "dev": "nexus dev",
-    "test": "jest",
-    "doctor": "nexus doctor",
-    "link:nexus": "yarn -s link nexus && chmod +x node_modules/.bin/nexus"
+    "test": "jest"
   },
   "prettier": {
     "semi": false
