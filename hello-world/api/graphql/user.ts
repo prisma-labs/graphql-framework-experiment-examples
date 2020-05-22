@@ -1,4 +1,12 @@
-import { schema } from "nexus"
+import { schema, settings } from "nexus"
+
+settings.change({
+  logger: {
+    filter: {
+      level,
+    },
+  },
+})
 
 schema.objectType({
   name: "User",

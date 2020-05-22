@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "db:start": "docker run --detach --publish 5432:5432 -e POSTGRES_PASSWORD=postgres --name 'integration-nextjs-with-plugin-prisma' postgres:10.12",
+    "db:start": "docker run --detach --publish 5432:5432 -e POSTGRES_PASSWORD=postgres --name 'with-nextjs-and-vercel-and-plugin-prisma' postgres:10.12",
     "db:migrate": "yarn -s prisma migrate save --experimental && yarn -s prisma migrate up --experimental",
     "nexus:reflection": "nexus dev --reflection --entrypoint pages/api/graphql.ts",
     "nexus:check": "nexus build --entrypoint pages/api/graphql.ts && nexus build --entrypoint pages/api/playground.ts",
@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "next": "9.3.5",
-    "nexus": "^0.21.0",
+    "nexus": "^0.22.0",
     "nexus-plugin-prisma": "^0.7.0",
     "react": "16.13.1",
     "react-dom": "16.13.1"
