@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "license": "MIT",
   "dependencies": {
-    "nexus": "^0.22.0-next.18"
+    "nexus": "0.20.0-next.47"
   },
   "devDependencies": {
     "@types/jest": "25.2.2",

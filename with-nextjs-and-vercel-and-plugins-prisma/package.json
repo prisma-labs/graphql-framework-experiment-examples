@@ -16,16 +16,16 @@
   },
   "dependencies": {
     "next": "9.3.5",
-    "nexus": "^0.22.0",
-    "nexus-plugin-prisma": "^0.7.0",
+    "nexus": "0.22.0",
+    "nexus-plugin-prisma": "0.7.0",
     "react": "16.13.1",
     "react-dom": "16.13.1"
   },
   "devDependencies": {
-    "@prisma-labs/prettier-config": "^0.1.0",
+    "@prisma-labs/prettier-config": "0.1.0",
     "@types/node": "13.13.2",
     "@types/react": "16.9.34",
-    "prettier": "^2.0.5",
+    "prettier": "2.0.5",
     "typescript": "3.8.3"
   },
   "prettier": "@prisma-labs/prettier-config"
