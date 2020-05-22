@@ -1,83 +1,67 @@
 ## Conventions
 
-Each example sits in its own project directory in the the root directory of this repo.
+### Overview
 
-Your example should be named according to one of the following conventions.
+Each Example should...
 
-### Cannonical Plugin Example
+- Be in its own directory at the the root of this repo
+- Have its directory named according to the conventions (see below)
+- Use `npm`
+
+### Naming
+
+#### Cannonical Plugin Example
 
 If it shows off a specific plugin then call it:
 
 ```
-plugin-<plugin name>
+Pattern                   Examples
+
+plugin-<plugin name>      plugin-prisma
 ```
 
-Example:
-
-```
-plugin-prisma
-```
-
-### Plugin Combination Example
+#### Plugin Combination Example
 
 If it shows off multiple plugins together in concert then call it:
 
 ```
-plugins-<plugin name>-[and-<plugin name>]+
+Pattern                                         Examples
+
+plugins-<plugin name>-[and-<plugin name>]+      plugins-prisma-and-jwt-auth
 ```
 
-Example:
-
-```
-plugins-prisma-and-jwt-auth
-```
-
-### Tool Integration Example
+#### Tool Integration Example
 
 If it shows off integration with another tool then call it:
 
 ```
-with-<tool name>
+Pattern               Examples
+
+with-<tool name>      with-nextjs
 ```
 
-Example:
-
-```
-with-nextjs
-```
-
-### Tool Integration Combination Example
+#### Tool Integration Combination Example
 
 If it shows off multiple tools together in concert then call it:
 
 ```
-with-<tool name>-[and-<tool name>]+
+Pattern                                 Examples
+
+with-<tool name>-[and-<tool name>]+     with-nextjs-and-vercel
 ```
 
-Example:
-
-```
-with-nextjs-and-vercel
-```
-
-### Tool & Plugin Example
+#### Tool & Plugin Example
 
 If the example shows integration with tools and plugins then call it:
 
 ```
+Pattern
+
 with-<tool name>-[and-<tool name>]+-and-plugins-<plugin name>-[and-<plugin name>]+
-```
 
-Example:
+Examples
 
-```
 with-nextjs-and-plugins-prisma
-```
-
-```
 with-nextjs-and-vercel-and-plugins-prisma
-```
-
-```
 with-nextjs-and-vercel-and-plugins-prisma-and-jwt-auth
 ```
