@@ -1,7 +1,7 @@
 {
-  "name": "example",
-  "private": true,
-  "version": "0.0.0",
+  "name": "plugin-prisma",
+  "version": "1.0.0",
+  "license": "MIT",
   "scripts": {
     "start": "node node_modules/.build",
     "test": "jest",
@@ -13,8 +13,8 @@
   },
   "dependencies": {
     "@nexus/typescript-language-service": "0.1.0-next.3",
-    "nexus": "0.21.0-next.18",
-    "nexus-plugin-prisma": "0.8.0-next.2"
+    "nexus": "^0.22.0",
+    "nexus-plugin-prisma": "^0.8.0"
   },
   "devDependencies": {
     "@types/debug": "4.1.5",

@@ -4,9 +4,6 @@ import { prisma } from 'nexus-plugin-prisma'
 use(prisma())
 
 settings.change({
-  logger: {
-    level: 'trace',
-  },
   schema: {
     connections: {
       foobar: {},
