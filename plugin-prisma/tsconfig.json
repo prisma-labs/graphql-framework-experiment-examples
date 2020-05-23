@@ -1,7 +1,9 @@
 {
   "compilerOptions": {
-    "skipLibCheck": true,
     "strict": true,
+    "target": "es2018",
+    "module": "commonjs",
+    "lib": ["esnext"],
     "rootDir": "api"
   },
   "include": ["api"]
