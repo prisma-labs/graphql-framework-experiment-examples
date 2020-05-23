@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "start": "node node_modules/.build",
+    "start": "node .nexus/build/api",
     "test": "jest",
     "clean": "rm -rf dist",
     "style": "prettier --write 'src/**/*'",
