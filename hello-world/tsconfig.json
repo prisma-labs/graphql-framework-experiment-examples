@@ -1,8 +1,11 @@
 {
   "compilerOptions": {
+    "target": "ES2018",
+    "module": "CommonJS",
     "strict": true,
     "esModuleInterop": true,
-    "rootDir": "api"
+    "rootDir": "api",
+    "plugins": [{ "name": "nexus/typescript-language-service" }]
   },
   "include": ["api"]
 }

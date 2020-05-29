@@ -14,7 +14,7 @@
   },
   "scripts": {
     "clean": "rm -rf dist",
-    "start": "node node_modules/.build",
+    "start": "node .nexus/build/api",
     "build": "nexus build",
     "generate": "nexus generate",
     "dev": "nexus dev",
