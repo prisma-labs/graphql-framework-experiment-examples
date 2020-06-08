@@ -6,7 +6,7 @@
     "db:start": "docker run --detach --publish 5432:5432 -e POSTGRES_PASSWORD=postgres --name 'with-nextjs-and-vercel-and-plugin-prisma' postgres:10.12",
     "db:migrate": "prisma migrate save --experimental && prisma migrate up --experimental",
     "nexus:reflection": "nexus dev --reflection --entrypoint pages/api/graphql.ts",
-    "nexus:check": "nexus build --entrypoint pages/api/graphql.ts && nexus build --entrypoint pages/api/playground.ts",
+    "nexus:check": "nexus build --entrypoint pages/api/graphql.ts",
     "test": "nexus build",
     "dev": "next dev",
     "start": "next start",

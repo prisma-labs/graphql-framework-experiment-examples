@@ -6,5 +6,4 @@ require('../../graphql/schema')
 
 app.assemble()
 
-export const playground = app.server.handlers.playground
 export default app.server.handlers.graphql
