@@ -14,7 +14,7 @@ const rules = {
         filterPosts: isAuthenticated,
         post: isAuthenticated
     },
-    Mutations: {
+    Mutation: {
         createDraft: isAuthenticated,
         deletePost: isAuthenticated,
         publish: isAuthenticated
