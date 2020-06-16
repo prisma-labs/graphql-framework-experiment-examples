@@ -4,7 +4,7 @@
   "license": "MIT",
   "repository": "graphql-nexus/examples",
   "dependencies": {
-    "nexus": "^0.23.0"
+    "nexus": "0.23.0"
   },
   "devDependencies": {
     "@types/jest": "26.0.0",
