@@ -1,26 +1,30 @@
-import { createTestContext, TestContext } from "nexus/testing"
+import Client from "../client"
 
-let ctx = {} as TestContext
+const client = Client.createClient({ url: "http://localhost:4000/graphql" })
+
+let ctx = {} as {
+  client: typeof client
+}
+
+ctx.client = client
 
 beforeAll(async () => {
-  const testContext = await createTestContext()
-  Object.assign(ctx, testContext)
-  await ctx.app.start()
+  // const testContext = await createTestContext()
+  // Object.assign(ctx, testContext)
+  // await ctx.app.start()
 })
 
 afterAll(async () => {
-  await ctx.app.stop()
+  // await ctx.app.stop()
 })
 
 it("works", async () => {
   expect(
-    await ctx.app.query(`
-      query {
-        users {
-          id
-        }
-      }
-    `)
+    await ctx.client.query({
+      users: {
+        id: true,
+      },
+    })
   ).toMatchInlineSnapshot(`
     Object {
       "users": Array [

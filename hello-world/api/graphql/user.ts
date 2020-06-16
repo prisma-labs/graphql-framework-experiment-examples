@@ -2,6 +2,7 @@ import { schema } from "nexus"
 
 schema.objectType({
   name: "User",
+  description: "foobar",
   definition(t) {
     t.field("id", { type: "ID" })
     t.field("name", { type: "String" })
