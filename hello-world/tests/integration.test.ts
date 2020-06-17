@@ -14,7 +14,7 @@ afterAll(async () => {
 
 it("works", async () => {
   expect(
-    await ctx.app.query(`
+    await ctx.client.send(`
       query {
         users {
           id

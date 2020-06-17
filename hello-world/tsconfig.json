@@ -5,7 +5,9 @@
     "strict": true,
     "esModuleInterop": true,
     "rootDir": "api",
+    "noEmit": true,
+    "typeRoots": ["node_modules/@types", "types"],
     "plugins": [{ "name": "nexus/typescript-language-service" }]
   },
-  "include": ["api"]
+  "include": ["api", "types.d.ts"]
 }
