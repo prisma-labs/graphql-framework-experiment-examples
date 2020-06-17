@@ -12,12 +12,15 @@
     "data:seed": "ts-node prisma/seed.ts"
   },
   "dependencies": {
-    "nexus": "^0.24.0",
+    "nexus": "^0.24.2",
     "nexus-plugin-prisma": "^0.10.0"
   },
   "devDependencies": {
     "@types/jest": "26.0.0",
     "jest": "26.0.1",
+    "jest-environment-node": "^26.0.1",
+    "nanoid": "^3.1.10",
+    "pg": "^8.2.1",
     "prettier": "2.0.5",
     "ts-jest": "26.1.0"
   },

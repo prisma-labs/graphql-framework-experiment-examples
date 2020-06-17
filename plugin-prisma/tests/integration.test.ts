@@ -1,9 +1,35 @@
-import { createTestContext } from 'nexus/testing'
+/**
+ * @jest-environment ./tests/environments/prisma
+ */
 
-beforeEach(async () => {
-  const ctx = await createTestContext()
+import { createTestContext, TestContext } from 'nexus/testing'
+
+let ctx: TestContext
+
+beforeAll(async () => {
+  ctx = await createTestContext()
 })
 
-it.todo('something')
+beforeAll(async () => {
+  await ctx.app.start()
+})
 
-// https://graphql-nexus.github.io/nexus/#/guides/testing?id=with-a-database
+afterAll(async () => {
+  await ctx.app.stop()
+})
+
+it('works', async () => {
+  expect(
+    await ctx.client.send(`
+      query {
+        people {
+          id
+        }
+      }
+    `)
+  ).toMatchInlineSnapshot(`
+    Object {
+      "people": Array [],
+    }
+  `)
+})

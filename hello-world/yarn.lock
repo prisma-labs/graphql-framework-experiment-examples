@@ -2067,6 +2067,11 @@ graphql-request@^2.1.0-next.1:
   dependencies:
     cross-fetch "^3.0.4"
 
+graphql-scalars@^1.1.5:
+  version "1.1.5"
+  resolved "https://registry.yarnpkg.com/graphql-scalars/-/graphql-scalars-1.1.5.tgz#9d0485e4f67a4120400dcbfa83797fc74f2f19af"
+  integrity sha512-2Kbq8VgreOB62eKUafwp7qvyvDIS3wmw+JNzyXydQS6I986/s4ceJZs6Hc7Ex/9zBrhFsUlVIEl0a6oUqGCU/Q==
+
 graphql@^14.5.8:
   version "14.6.0"
   resolved "https://registry.yarnpkg.com/graphql/-/graphql-14.6.0.tgz#57822297111e874ea12f5cd4419616930cd83e49"
@@ -3282,10 +3287,10 @@ negotiator@0.6.2:
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.2.tgz#feacf7ccf525a77ae9634436a64883ffeca346fb"
   integrity sha512-hZXc7K2e+PgeI1eDBe/10Ard4ekbfrrqG8Ep+8Jmf4JID2bNg7NvCPOZN+kfF574pFQI7mum2AUqDidoKqcTOw==
 
-nexus@^0.23.0:
-  version "0.23.0"
-  resolved "https://registry.yarnpkg.com/nexus/-/nexus-0.23.0.tgz#716414754269ae858bdb0e11edf9109e0511db04"
-  integrity sha512-rpGV1jHksU0CHP+vwwctDgqMhv1UsxrE3K7D9ka6Ch4801F3DNjvaWiitpVebIr0OZmxHTTICDM3SjW+7my3vg==
+nexus@^0.24.0:
+  version "0.24.0"
+  resolved "https://registry.yarnpkg.com/nexus/-/nexus-0.24.0.tgz#b97db83386b04c4e92e511f77c6ec6813b09d72f"
+  integrity sha512-1b5wdswnx7ZQ9muooeH+XY5GNZT6Q/Mm7Z14z9ZEc1Yan4tLuxL2wRaRYl8bXb7nVBHisG4+7RaZr79PqtVTsA==
   dependencies:
     "@nexus/logger" "^0.2.0"
     "@nexus/schema" "^0.14.0"
@@ -3299,6 +3304,7 @@ nexus@^0.23.0:
     chokidar "^3.3.0"
     common-tags "^1.8.0"
     content-type "^1.0.4"
+    cross-fetch "^3.0.4"
     dotenv "^8.2.0"
     express "^4.17.1"
     fp-ts "^2.5.4"
@@ -3306,9 +3312,11 @@ nexus@^0.23.0:
     get-port "^5.1.0"
     graphql "^14.5.8"
     graphql-request "^2.1.0-next.1"
+    graphql-scalars "^1.1.5"
     http-errors "^1.7.3"
     lodash "^4.17.15"
     node-fetch "^2.6.0"
+    parse-json "^5.0.0"
     pirates "^4.0.1"
     prompts "^2.3.0"
     rxjs "^6.5.4"
