@@ -4,7 +4,10 @@
     "target": "es2018",
     "module": "commonjs",
     "lib": ["esnext"],
-    "rootDir": "api"
+    "noEmit": true,
+    "typeRoots": ["node_modules/@types", "types"],
+    "rootDir": "api",
+    "plugins": [{ "name": "nexus/typescript-language-service" }]
   },
-  "include": ["api"]
+  "include": ["api", "types.d.ts"]
 }

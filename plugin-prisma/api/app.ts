@@ -1,7 +1,7 @@
 import { log, settings, use } from 'nexus'
 import { prisma } from 'nexus-plugin-prisma'
 
-use(prisma())
+use(prisma({ features: { crud: true } }))
 
 settings.change({
   schema: {
