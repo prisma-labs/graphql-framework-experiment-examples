@@ -1,4 +1,4 @@
-import { schema, settings } from "nexus"
+import { schema } from "nexus"
 
 schema.addToContext((req) => {
   return {
@@ -13,10 +13,4 @@ schema.addToContext((req) => {
       },
     },
   }
-})
-
-settings.change({
-  schema: {
-    generateGraphQLSDLFile: "api.graphql",
-  },
 })
