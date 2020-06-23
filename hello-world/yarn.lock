@@ -2227,17 +2227,17 @@ genql-cli@^1.0.39:
     qs "^6.9.1"
     rimraf "^2.6.3"
 
-genql-runtime@^1.0.38:
-  version "1.0.38"
-  resolved "https://registry.yarnpkg.com/genql-runtime/-/genql-runtime-1.0.38.tgz#fc0cbfe295cf8cf3092306bfebb2303cdf4aa1d7"
-  integrity sha512-l6Ezg52tRy/3214J1HD5wbcOc290u5njo8uDxgeP8HQFMmwbhAb9bRqAYEmybERElJqdaB/md2igkF4Bw82HZQ==
+genql-runtime@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/genql-runtime/-/genql-runtime-1.1.2.tgz#2293b70bac6c1e4748363834fa5e227ed6a82c4b"
+  integrity sha512-0xAimjqlDv7vguUfNMlHjiHRj/LRyAxAcpCmDZ88BZjiMP0LVzoI3vxOT6HogCHE4gSYyRAqlU/NIqRR0KI3Qw==
   dependencies:
     "@types/graphql" "^14.5.0"
     "@types/lodash.get" "^4.4.6"
     "@types/lodash.startswith" "^4.2.6"
     "@types/qs" "^6.9.0"
     "@types/ws" "^6.0.1"
-    graphql "^14.5.8"
+    graphql "^15.1.0"
     isomorphic-unfetch "^3.0.0"
     lodash.get "^4.4.2"
     lodash.startswith "^4.2.1"
@@ -2361,7 +2361,7 @@ graphql-toolkit@^0.3.0:
     tslib "^1.9.3"
     valid-url "1.0.9"
 
-graphql@*:
+graphql@*, graphql@^15.1.0:
   version "15.1.0"
   resolved "https://registry.yarnpkg.com/graphql/-/graphql-15.1.0.tgz#b93e28de805294ec08e1630d901db550cb8960a1"
   integrity sha512-0TVyfOlCGhv/DBczQkJmwXOK6fjWkjzY3Pt7wY8i0gcYXq8aogG3weCsg48m72lywKSeOqedEHvVPOvZvSD51Q==

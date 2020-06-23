@@ -4,7 +4,7 @@
   "license": "MIT",
   "repository": "graphql-nexus/examples",
   "dependencies": {
-    "genql-runtime": "^1.0.38",
+    "genql-runtime": "^1.1.2",
     "nexus": "^0.22.0"
   },
   "devDependencies": {
