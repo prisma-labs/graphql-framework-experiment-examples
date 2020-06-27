@@ -1,1 +1,0 @@
-{"Query":{"name":"Query","fields":{"users":{"type":"User"},"__typename":{"type":"String"}}},"User":{"name":"User","fields":{"id":{"type":"ID"},"name":{"type":"String"},"__typename":{"type":"String"}},"scalar":["id","name"]},"ID":{"name":"ID"},"String":{"name":"String"},"Boolean":{"name":"Boolean"}}
