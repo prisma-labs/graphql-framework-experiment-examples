@@ -3287,10 +3287,10 @@ negotiator@0.6.2:
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.2.tgz#feacf7ccf525a77ae9634436a64883ffeca346fb"
   integrity sha512-hZXc7K2e+PgeI1eDBe/10Ard4ekbfrrqG8Ep+8Jmf4JID2bNg7NvCPOZN+kfF574pFQI7mum2AUqDidoKqcTOw==
 
-nexus@^0.24.0:
-  version "0.24.0"
-  resolved "https://registry.yarnpkg.com/nexus/-/nexus-0.24.0.tgz#b97db83386b04c4e92e511f77c6ec6813b09d72f"
-  integrity sha512-1b5wdswnx7ZQ9muooeH+XY5GNZT6Q/Mm7Z14z9ZEc1Yan4tLuxL2wRaRYl8bXb7nVBHisG4+7RaZr79PqtVTsA==
+nexus@^0.25.0:
+  version "0.25.0"
+  resolved "https://registry.yarnpkg.com/nexus/-/nexus-0.25.0.tgz#e1824d31c837541aff4899cf43cd088189606e2d"
+  integrity sha512-ZA4EW/BS8buSvHlPiUrnXBk4GAuY08EiKnt3MBUB2mxDlt4bYH2HNJw5TB6qZMKeFwjhHeGenvxwj/o9Ijg2PQ==
   dependencies:
     "@nexus/logger" "^0.2.0"
     "@nexus/schema" "^0.14.0"
@@ -3321,6 +3321,7 @@ nexus@^0.24.0:
     prompts "^2.3.0"
     rxjs "^6.5.4"
     simple-git "^2.0.0"
+    slash "^3.0.0"
     strip-ansi "^6.0.0"
     ts-morph "^7.1.0"
     ts-node "^8.10.1"
