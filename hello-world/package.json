@@ -4,12 +4,12 @@
   "license": "MIT",
   "repository": "graphql-nexus/examples",
   "dependencies": {
-    "genql-runtime": "^1.1.11",
+    "genql-runtime": "^1.1.14",
     "nexus": "^0.22.0"
   },
   "devDependencies": {
     "@types/jest": "25.2.2",
-    "genql-cli": "^1.1.11",
+    "genql-cli": "^1.1.14",
     "jest": "26.0.1",
     "prettier": "2.0.5",
     "ts-jest": "26.0.0"
