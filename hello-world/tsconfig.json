@@ -9,7 +9,7 @@
     "typeRoots": ["node_modules/@types", "types"],
     "plugins": [
       { "name": "nexus/typescript-language-service" },
-      { "name": "ts-graphql-plugin", "schema": "api.graphql", "tag": "send" }
+      { "name": "ts-graphql-plugin", "schema": "api.graphql", "tag": "gql" }
     ]
   },
   "include": ["api", "types.d.ts"]

@@ -2,7 +2,7 @@ import { createTestContext, TestContext } from "nexus/testing"
 
 let ctx = {} as TestContext
 
-function send(strings: TemplateStringsArray) {
+function gql(strings: TemplateStringsArray) {
   const document = strings.join("")
   return ctx.client.send(document)
 }
@@ -18,7 +18,7 @@ afterAll(async () => {
 })
 
 it("works", async () => {
-  const result = await send`
+  const result = await gql`
     query {
       users {
         name
