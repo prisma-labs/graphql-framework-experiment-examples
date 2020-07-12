@@ -7,7 +7,10 @@
     "rootDir": "api",
     "noEmit": true,
     "typeRoots": ["node_modules/@types", "types"],
-    "plugins": [{ "name": "nexus/typescript-language-service" }]
+    "plugins": [
+      { "name": "nexus/typescript-language-service" },
+      { "name": "ts-graphql-plugin", "schema": "api.graphql", "tag": "send" }
+    ]
   },
   "include": ["api", "types.d.ts"]
 }
