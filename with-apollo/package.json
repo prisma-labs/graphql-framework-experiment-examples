@@ -1,0 +1,16 @@
+{
+  "name": "with-apollo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Jason Kuhrt",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server-express": "^2.15.1",
+    "nexus": "0.0.0-pr.1211.1.01ba274"
+  }
+}
