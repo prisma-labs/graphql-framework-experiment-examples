@@ -1,5 +1,8 @@
 # Repro Instructions
 
+- This is the issue: https://github.com/dsherret/ts-morph/issues/835
+- This is the branch of `nexus` being used: https://github.com/graphql-nexus/nexus/pull/1223
+
 ```
 yarn install
 yarn nexus build
