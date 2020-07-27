@@ -14,6 +14,10 @@ type Query {
   users: [User!]
 }
 
+type Subscription {
+  truths: Boolean
+}
+
 type User {
   id: ID
   name: String
