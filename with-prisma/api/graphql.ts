@@ -3,9 +3,20 @@ import { schema } from 'nexus'
 
 const db = new PrismaClient()
 
+export interface bebe {
+  a: boolean
+}
+
+export type Foobar<T> = {
+  foo: 'bar'
+}
+
+const foobar: Foobar<bebe> = { foo: 'bar' }
+
 schema.addToContext((req) => {
   return {
     db,
+    foobar,
   }
 })
 
