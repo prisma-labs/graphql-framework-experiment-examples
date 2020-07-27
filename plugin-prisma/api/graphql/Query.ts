@@ -12,27 +12,19 @@ schema.queryType({
     // Examples showing custom resolvers
     //
 
-    // t.field('blog', {
-    //   type: 'Blog',
-    //   args: {
-    //     id: schema.intArg({ required: true }),
-    //   },
-    //   resolve(_root, args, ctx) {
-    //     return ctx.db.blogs
-    //       .findOne({
-    //         where: {
-    //           id: args.id,
-    //         },
-    //       })
-    //       .then(maybeBlog => {
-    //         if (maybeBlog === null) {
-    //           throw new Error(`Could not find blog with ID ${args.id}`)
-    //         } else {
-    //           return maybeBlog
-    //         }
-    //       })
-    //   },
-    // })
+    t.field('blog', {
+      type: 'Blog',
+      args: {
+        id: schema.intArg({ required: true }),
+      },
+      resolve(_root, args, ctx) {
+        return ctx.db.blog.findOne({
+          where: {
+            id: args.id,
+          },
+        })
+      },
+    })
 
     t.field('blogsLike', {
       type: 'Blog',
