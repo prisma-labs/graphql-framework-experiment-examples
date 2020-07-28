@@ -10,7 +10,7 @@
     "format": "npx prettier --write './**/*.{ts,md}'",
     "dev": "nexus dev",
     "build": "nexus build",
-    "start": "node .nexus/build/api"
+    "start": "node .nexus/build"
   },
   "prettier": {
     "semi": false,

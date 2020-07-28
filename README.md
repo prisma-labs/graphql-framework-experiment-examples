@@ -1,12 +1,18 @@
 # examples
 
-This repo includes various examples using [Nexus](https://nexusjs.org).
+This repo includes various examples using [Nexus](https://nexusjs.org). Each directory here contains one runnable example. The naming pattern of directories is designed to help navigate them. The gist is:
+
+- `plugin-*` Are for demonstrating a plugin
+- `plugins-*` Are for demonstrating plugins used together
+- `with-*` Are for demonstrating an integration with some other tool Notably _without_ using the plugin system.
+
+Below you will find the examples indexed by various dimensions. So if you're curious about a topic like "authentication" or "databases" you can easily find all examples that relate to that.
 
 ### Basic
 
 - [hello-world](/hello-world)
 
-### Plugins
+### By Plugin
 
 #### Prisma
 
@@ -24,7 +30,12 @@ This repo includes various examples using [Nexus](https://nexusjs.org).
 
 - [plugins-prisma-and-jwt-auth-and-shield](/plugins-prisma-and-jwt-auth-and-shield)
 
-### Integrations
+### By Integration
+
+#### Prisma
+
+- [with-prisma](/with-prisma)
+- [plugin-prisma](/plugin-prisma)
 
 #### NextJS
 
@@ -35,7 +46,7 @@ This repo includes various examples using [Nexus](https://nexusjs.org).
 
 - [with-nextjs-and-vercel-and-plugins-prisma](/with-nextjs-and-vercel-and-plugins-prisma)
 
-### Domains
+### By Domain
 
 #### Deployment
 
@@ -45,3 +56,8 @@ This repo includes various examples using [Nexus](https://nexusjs.org).
 
 - [plugins-prisma-and-jwt-auth-and-shield](/plugins-prisma-and-jwt-auth-and-shield)
 - [plugins-prisma-and-jwt-auth](/plugins-prisma-and-jwt-auth)
+
+#### Databases
+
+- [with-prisma](/with-prisma)
+- [plugin-prisma](/plugin-prisma)
