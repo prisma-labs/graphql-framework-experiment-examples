@@ -1,0 +1,17 @@
+{
+  // Note: You can delete this file if you're not using vscode
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Debug Nexus App",
+      "protocol": "inspector",
+      "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/nexus",
+      "runtimeArgs": ["dev"],
+      "args": ["api/app.ts"],
+      "sourceMaps": true,
+      "console": "integratedTerminal"
+    }
+  ]
+}
