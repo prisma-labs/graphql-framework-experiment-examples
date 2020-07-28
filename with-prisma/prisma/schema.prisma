@@ -1,6 +1,6 @@
 datasource db {
-  provider = "postgresql"
-  url      = "postgresql://postgres:postgres@localhost:5432/myapp"
+  provider = "sqlite"
+  url      = "file:db.sqlite"
 }
 
 generator prisma_client_js {
@@ -26,22 +26,15 @@ model User {
   blogId    Int?
   blog      Blog?    @relation(fields: [blogId], references: [id])
   rating    Float
-  role      UserRole
-}
-
-enum UserRole {
-  ADMIN
-  AUTHOR
 }
 
 model Post {
-  id     Int        @default(autoincrement()) @id
+  id     Int    @default(autoincrement()) @id
   title  String
-  tags   Tag[]      @relation(references: [id])
+  tags   Tag[]  @relation(references: [id])
   blogId Int?
-  blog   Blog?      @relation(fields: [blogId], references: [id])
-  status PostStatus
-  User   User?      @relation(fields: [userId], references: [id])
+  blog   Blog?  @relation(fields: [blogId], references: [id])
+  User   User?  @relation(fields: [userId], references: [id])
   userId Int?
 }
 
@@ -49,9 +42,4 @@ model Tag {
   id    Int    @default(autoincrement()) @id
   label String
   posts Post[] @relation(references: [id])
-}
-
-enum PostStatus {
-  DRAFT
-  PUBLISHED
 }

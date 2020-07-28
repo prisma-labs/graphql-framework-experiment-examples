@@ -1,40 +1,36 @@
-/**
- * This file is your server entrypoint. Don't worry about its emptyness, Nexus handles everything for you.
- * However, if you need to add settings, enable plugins, schema middleware etc, this is place to do it.
- * Below are some examples of what you can do. Uncomment them to try them out!
- */
+import * as Prisma from '@prisma/client'
+import { on, schema } from 'nexus'
 
-/**
- * Change a variety of settings
- */
+// todo https://github.com/graphql-nexus/nexus/issues/473#issuecomment-665171477
+export type User = Prisma.User
 
-// import { settings } from 'nexus'
-//
-// settings.change({
-//   server: {
-//     port: 4001
-//   }
-// })
+on.start(() => {
+  const db = new Prisma.PrismaClient()
 
-/**
- * Add some schema middleware
- */
+  schema.addToContext(() => {
+    return { db }
+  })
+})
 
-// import { schema } from 'nexus'
-//
-// schema.middleware((_config) => {
-//   return async (root, args, ctx, info, next) {
-//     ctx.log.trace('before resolver')
-//     await next(root, args, ctx, info)
-//     ctx.log.trace('after resolver')
-//   }
-// })
+schema.objectType({
+  name: 'User',
+  rootTyping: 'User',
+  definition(t) {
+    t.id('id')
+    t.string('name')
+  },
+})
 
-/**
- * Enable the Prisma plugin. (Needs `nexus-plugin-prisma` installed)
- */
-
-// import { use } from 'nexus'
-// import { prisma } from 'nexus-plugin-prisma'
-//
-// use(prisma())
+schema.queryType({
+  definition(t) {
+    t.list.field('users', {
+      type: 'User',
+      args: {
+        world: schema.stringArg({ required: false }),
+      },
+      resolve(_root, args, ctx) {
+        return ctx.db.user.findMany()
+      },
+    })
+  },
+})

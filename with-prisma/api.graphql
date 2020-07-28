@@ -15,11 +15,10 @@ The `JSON` scalar type represents JSON objects as specified by [ECMA-404](http:/
 scalar Json
 
 type Query {
-  hello(world: String): World
+  users(world: String): [User!]
 }
 
-type World {
+type User {
   id: ID
   name: String
-  population: Float
 }
