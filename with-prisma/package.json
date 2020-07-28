@@ -3,8 +3,8 @@
   "license": "UNLICENSED",
   "version": "0.0.0",
   "dependencies": {
-    "@prisma/client": "^2.3.0",
-    "nexus": "^0.26.0-next.13"
+    "@prisma/client": "2.3.0",
+    "nexus": "0.26.0-next.13"
   },
   "scripts": {
     "format": "npx prettier --write './**/*.{ts,md}'",
@@ -18,7 +18,7 @@
     "trailingComma": "all"
   },
   "devDependencies": {
-    "@prisma/cli": "^2.3.0",
-    "prettier": "^2.0.5"
+    "@prisma/cli": "2.3.0",
+    "prettier": "2.0.5"
   }
 }
