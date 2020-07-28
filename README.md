@@ -1,12 +1,14 @@
-# examples
+# Nexus Examples
 
-This repo includes various examples using [Nexus](https://nexusjs.org). Each directory here contains one runnable example. The naming pattern of directories is designed to help navigate them. The gist is:
+This repo includes various examples using [Nexus](https://nexusjs.org). Each directory here contains one runnable example. The naming pattern of directories is designed to help navigate them. The gist is as follows (if you are curious about the exact rules see the [contributing guide](/CONTRIBUTING.md)):
 
 - `plugin-*` Are for demonstrating a plugin
 - `plugins-*` Are for demonstrating plugins used together
 - `with-*` Are for demonstrating an integration with some other tool Notably _without_ using the plugin system.
 
 Below you will find the examples indexed by various dimensions. So if you're curious about a topic like "authentication" or "databases" you can easily find all examples that relate to that.
+
+If you are an expert in some tool that Nexus could integrate with but there is no example here yet for it, we would welcome a contribution for it! To get started please refer to the [contributing guide](/CONTRIBUTING.md). 🙏🏻
 
 ### Basic
 
