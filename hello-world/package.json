@@ -4,13 +4,13 @@
   "license": "MIT",
   "repository": "graphql-nexus/examples",
   "dependencies": {
-    "nexus": "^0.25.0"
+    "nexus": "^0.26.1"
   },
   "devDependencies": {
-    "@types/jest": "26.0.0",
-    "jest": "26.0.1",
-    "prettier": "2.0.5",
-    "ts-jest": "26.1.0"
+    "@types/jest": "26.0.12",
+    "jest": "26.4.2",
+    "prettier": "2.1.1",
+    "ts-jest": "26.3.0"
   },
   "scripts": {
     "clean": "rm -rf dist",
