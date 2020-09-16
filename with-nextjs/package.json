@@ -22,7 +22,7 @@
     "@prisma-labs/prettier-config": "0.1.0",
     "@types/node": "13.13.10",
     "@types/react": "16.9.34",
-    "prettier": "2.0.5",
+    "prettier": "2.1.2",
     "typescript": "3.9.6"
   },
   "prettier": "@prisma-labs/prettier-config"
