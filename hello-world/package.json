@@ -10,7 +10,7 @@
     "@types/jest": "26.0.13",
     "jest": "26.4.2",
     "prettier": "2.1.1",
-    "ts-jest": "26.3.0"
+    "ts-jest": "26.4.1"
   },
   "scripts": {
     "clean": "rm -rf dist",
