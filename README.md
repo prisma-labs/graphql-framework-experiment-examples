@@ -1,3 +1,18 @@
+<h1 align="center">
+<br/>
+👋
+<br/>
+<br/>
+Development of Nexus Framework has ended. Please read our <a href="https://nxs.li/unframework/about"><i>annoucement issue</i></a> for details and follow our <a href="https://nxs.li/unframework/migrate"><i>migration guide</i></a> to start using Nexus Schema.
+<br/>
+<br/>
+<br/>
+<br/>
+
+🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧
+
+</h1>
+
 # Nexus Examples
 
 This repo includes various examples using [Nexus](https://nexusjs.org). Each directory here contains one runnable example. The naming pattern of directories is designed to help navigate them. The gist is as follows (if you are curious about the exact rules see the [contributing guide](/CONTRIBUTING.md)):
