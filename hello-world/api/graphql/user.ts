@@ -8,8 +8,7 @@ schema.objectType({
   },
 })
 
-schema.objectType({
-  name: "Query",
+schema.queryType({
   definition(t) {
     t.list.field("users", {
       type: "User",
