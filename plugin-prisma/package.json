@@ -17,8 +17,8 @@
   },
   "devDependencies": {
     "@types/jest": "26.0.0",
-    "jest": "26.0.1",
-    "jest-environment-node": "26.0.1",
+    "jest": "26.4.2",
+    "jest-environment-node": "26.3.0",
     "nanoid": "3.1.10",
     "pg": "8.2.1",
     "prettier": "2.0.5",
