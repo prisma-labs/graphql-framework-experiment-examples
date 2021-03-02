@@ -6,7 +6,7 @@
     "nexus": "0.25.0",
     "nexus-plugin-jwt-auth": "1.0.0",
     "nexus-plugin-prisma": "0.16.1",
-    "nexus-plugin-shield": "0.1.2"
+    "nexus-plugin-shield": "0.2.0"
   },
   "scripts": {
     "format": "npx prettier --write './**/*.{ts,md}'",
