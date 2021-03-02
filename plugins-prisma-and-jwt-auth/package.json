@@ -3,7 +3,7 @@
   "dependencies": {
     "bcryptjs": "2.4.3",
     "jsonwebtoken": "8.5.1",
-    "nexus": "0.25.0",
+    "nexus": "0.30.0",
     "nexus-plugin-jwt-auth": "1.0.0",
     "nexus-plugin-prisma": "0.16.1"
   },
