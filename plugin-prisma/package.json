@@ -20,7 +20,7 @@
     "jest": "26.0.1",
     "jest-environment-node": "26.0.1",
     "nanoid": "3.1.10",
-    "pg": "8.2.1",
+    "pg": "8.3.3",
     "prettier": "2.0.5",
     "ts-jest": "26.1.0"
   },
